@@ -4,14 +4,26 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Telalogin.view;
 
 namespace Telalogin
 {
     public partial class Telalogin : Form
     {
+
+        private string HashSenha(string senha)
+        {
+            using (SHA256 sha256 = SHA256.Create())
+            {
+                byte[] hashBytes = sha256.ComputeHash(Encoding.UTF8.GetBytes(senha));
+                return Convert.ToBase64String(hashBytes);
+            }
+        }
+
         public Telalogin()
         {
             InitializeComponent();
@@ -61,5 +73,15 @@ namespace Telalogin
                 boxSenha.ForeColor = Color.Gray;
             }
         }
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        { 
+        }
+
+        private void boxSenha_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+    
     }
 }
