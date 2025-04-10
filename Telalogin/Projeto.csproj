@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="loginUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="loginUsuario.Designer.cs">
+      <DependentUpon>loginUsuario.cs</DependentUpon>
+    </Compile>
     <Compile Include="view\Telalogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -57,6 +63,9 @@
     <Compile Include="view\RoundedPictureBox.cs">
       <SubType>Component</SubType>
     </Compile>
+    <EmbeddedResource Include="loginUsuario.resx">
+      <DependentUpon>loginUsuario.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
