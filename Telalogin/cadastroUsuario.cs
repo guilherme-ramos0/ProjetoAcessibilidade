@@ -17,7 +17,7 @@ namespace SistemaLoginCadastro
 
         public CadastroUsuario()
         {
-            //InitializeComponent();
+            InitializeComponent();
         }
         // Função para gerar o hash da senha
 
@@ -145,6 +145,15 @@ namespace SistemaLoginCadastro
 
         }
 
+        private void lblCadastro_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void CadastroUsuario_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 
 }

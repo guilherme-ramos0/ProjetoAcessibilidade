@@ -28,7 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.roundedPictureBox1 = new RoundedPictureBox();
+            this.rounde1 = new Rounde();
             this.panel2 = new System.Windows.Forms.Panel();
             this.txtConfirmarSenha = new System.Windows.Forms.TextBox();
             this.txtSenha = new System.Windows.Forms.TextBox();
@@ -37,24 +39,41 @@
             this.txtNomeCompleto = new System.Windows.Forms.TextBox();
             this.btnCadastro = new System.Windows.Forms.Button();
             this.lblCadastro = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.roundedPictureBox1)).BeginInit();
+            this.rounde1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // panel1
+            // textBox6
             // 
-            this.panel1.BackColor = System.Drawing.Color.MidnightBlue;
-            this.panel1.Controls.Add(this.panel2);
-            this.panel1.Location = new System.Drawing.Point(139, 21);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(550, 459);
-            this.panel1.TabIndex = 0;
+            this.textBox6.Location = new System.Drawing.Point(614, 315);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(0, 20);
+            this.textBox6.TabIndex = 7;
+            // 
+            // roundedPictureBox1
+            // 
+            this.roundedPictureBox1.CornerRadius = 30;
+            this.roundedPictureBox1.Location = new System.Drawing.Point(402, 81);
+            this.roundedPictureBox1.Name = "roundedPictureBox1";
+            this.roundedPictureBox1.Size = new System.Drawing.Size(8, 8);
+            this.roundedPictureBox1.TabIndex = 8;
+            this.roundedPictureBox1.TabStop = false;
+            // 
+            // rounde1
+            // 
+            this.rounde1.BackColor = System.Drawing.Color.AliceBlue;
+            this.rounde1.Controls.Add(this.panel2);
+            this.rounde1.CornerRadius = 30;
+            this.rounde1.Location = new System.Drawing.Point(291, 81);
+            this.rounde1.Name = "rounde1";
+            this.rounde1.Padding = new System.Windows.Forms.Padding(60, 30, 60, 30);
+            this.rounde1.Size = new System.Drawing.Size(517, 474);
+            this.rounde1.TabIndex = 9;
             // 
             // panel2
             // 
-            this.panel2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.panel2.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.panel2.BackColor = System.Drawing.SystemColors.Highlight;
             this.panel2.Controls.Add(this.txtConfirmarSenha);
             this.panel2.Controls.Add(this.txtSenha);
             this.panel2.Controls.Add(this.txtEmail);
@@ -62,9 +81,10 @@
             this.panel2.Controls.Add(this.txtNomeCompleto);
             this.panel2.Controls.Add(this.btnCadastro);
             this.panel2.Controls.Add(this.lblCadastro);
-            this.panel2.Location = new System.Drawing.Point(68, 24);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2.Location = new System.Drawing.Point(60, 30);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(413, 395);
+            this.panel2.Size = new System.Drawing.Size(397, 414);
             this.panel2.TabIndex = 0;
             // 
             // txtConfirmarSenha
@@ -115,8 +135,8 @@
             // 
             // btnCadastro
             // 
-            this.btnCadastro.BackColor = System.Drawing.Color.MidnightBlue;
-            this.btnCadastro.Font = new System.Drawing.Font("Segoe UI", 15.75F);
+            this.btnCadastro.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(70)))), ((int)(((byte)(162)))));
+            this.btnCadastro.Font = new System.Drawing.Font("Segoe UI Semibold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCadastro.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.btnCadastro.Location = new System.Drawing.Point(85, 319);
             this.btnCadastro.Name = "btnCadastro";
@@ -128,33 +148,34 @@
             // lblCadastro
             // 
             this.lblCadastro.AutoSize = true;
-            this.lblCadastro.BackColor = System.Drawing.Color.MidnightBlue;
-            this.lblCadastro.Font = new System.Drawing.Font("Segoe UI", 15.75F);
+            this.lblCadastro.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(70)))), ((int)(((byte)(162)))));
+            this.lblCadastro.Font = new System.Drawing.Font("Segoe UI Semibold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCadastro.ForeColor = System.Drawing.SystemColors.Window;
-            this.lblCadastro.Location = new System.Drawing.Point(93, 27);
+            this.lblCadastro.Location = new System.Drawing.Point(93, 24);
             this.lblCadastro.Name = "lblCadastro";
-            this.lblCadastro.Size = new System.Drawing.Size(204, 30);
+            this.lblCadastro.Size = new System.Drawing.Size(208, 30);
             this.lblCadastro.TabIndex = 0;
             this.lblCadastro.Text = "Realize seu Cadastro";
-            // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(614, 315);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(0, 20);
-            this.textBox6.TabIndex = 7;
+            this.lblCadastro.Click += new System.EventHandler(this.lblCadastro_Click);
             // 
             // CadastroUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.RoyalBlue;
-            this.ClientSize = new System.Drawing.Size(823, 513);
+            this.BackgroundImage = global::Telalogin.Properties.Resources.fundo1;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(1086, 628);
+            this.Controls.Add(this.roundedPictureBox1);
             this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.rounde1);
+            this.DoubleBuffered = true;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Name = "CadastroUsuario";
             this.Text = "Form1";
-            this.panel1.ResumeLayout(false);
+            this.Load += new System.EventHandler(this.CadastroUsuario_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.roundedPictureBox1)).EndInit();
+            this.rounde1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.ResumeLayout(false);
@@ -163,8 +184,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button btnCadastro;
         private System.Windows.Forms.Label lblCadastro;
@@ -174,5 +193,7 @@
         private System.Windows.Forms.TextBox txtCPF;
         private System.Windows.Forms.TextBox txtNomeCompleto;
         private System.Windows.Forms.TextBox textBox6;
+        private RoundedPictureBox roundedPictureBox1;
+        private Rounde rounde1;
     }
 }

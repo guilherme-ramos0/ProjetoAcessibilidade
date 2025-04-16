@@ -52,6 +52,15 @@
     <Compile Include="cadastroUsuario.Designer.cs">
       <DependentUpon>cadastroUsuario.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formlaison.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlaison.Designer.cs">
+      <DependentUpon>Formlaison.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\panel.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="view\Telalogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,6 +75,9 @@
     <EmbeddedResource Include="cadastroUsuario.resx">
       <DependentUpon>cadastroUsuario.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formlaison.resx">
+      <DependentUpon>Formlaison.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -74,6 +86,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="view\Telalogin.resx">
       <DependentUpon>Telalogin.cs</DependentUpon>
@@ -87,6 +100,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="view\.editorconfig" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -94,6 +108,18 @@
   <ItemGroup>
     <Folder Include="controller\" />
     <Folder Include="model\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fundo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Wallpaper PI.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Wallpaper PI1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fundo1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
