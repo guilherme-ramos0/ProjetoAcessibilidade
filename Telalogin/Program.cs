@@ -16,7 +16,7 @@ namespace Telalogin
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Telalogin());
+            Application.Run(new loginUsuario());
         }
     }
 }

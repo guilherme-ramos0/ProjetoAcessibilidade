@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Telalogin
 {
-    public partial class Telalogin : Form
+    public partial class TelaCadastro: Form
     {
-        public Telalogin()
+        public TelaCadastro()
         {
             InitializeComponent();
         }

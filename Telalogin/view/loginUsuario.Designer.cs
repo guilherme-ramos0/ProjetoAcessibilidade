@@ -30,12 +30,12 @@
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.txtCPF = new System.Windows.Forms.Label();
-            this.txtSenha = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.btnLogin = new System.Windows.Forms.Button();
             this.btnCadastro = new System.Windows.Forms.Button();
+            this.btnLogin = new System.Windows.Forms.Button();
+            this.txtBoxSenha = new System.Windows.Forms.TextBox();
+            this.txtBoxCpf = new System.Windows.Forms.TextBox();
+            this.txtSenha = new System.Windows.Forms.Label();
+            this.txtCPF = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -60,8 +60,8 @@
             this.panel1.BackColor = System.Drawing.Color.GhostWhite;
             this.panel1.Controls.Add(this.btnCadastro);
             this.panel1.Controls.Add(this.btnLogin);
-            this.panel1.Controls.Add(this.textBox2);
-            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.txtBoxSenha);
+            this.panel1.Controls.Add(this.txtBoxCpf);
             this.panel1.Controls.Add(this.txtSenha);
             this.panel1.Controls.Add(this.txtCPF);
             this.panel1.Location = new System.Drawing.Point(48, 45);
@@ -69,15 +69,47 @@
             this.panel1.Size = new System.Drawing.Size(394, 219);
             this.panel1.TabIndex = 0;
             // 
-            // txtCPF
+            // btnCadastro
             // 
-            this.txtCPF.AutoSize = true;
-            this.txtCPF.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCPF.Location = new System.Drawing.Point(87, 27);
-            this.txtCPF.Name = "txtCPF";
-            this.txtCPF.Size = new System.Drawing.Size(36, 16);
-            this.txtCPF.TabIndex = 0;
-            this.txtCPF.Text = "CPF";
+            this.btnCadastro.BackColor = System.Drawing.Color.MidnightBlue;
+            this.btnCadastro.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCadastro.ForeColor = System.Drawing.Color.GhostWhite;
+            this.btnCadastro.Location = new System.Drawing.Point(214, 157);
+            this.btnCadastro.Name = "btnCadastro";
+            this.btnCadastro.Size = new System.Drawing.Size(138, 33);
+            this.btnCadastro.TabIndex = 5;
+            this.btnCadastro.Text = "Cadastro";
+            this.btnCadastro.UseVisualStyleBackColor = false;
+            // 
+            // btnLogin
+            // 
+            this.btnLogin.BackColor = System.Drawing.Color.MidnightBlue;
+            this.btnLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogin.ForeColor = System.Drawing.Color.GhostWhite;
+            this.btnLogin.Location = new System.Drawing.Point(45, 157);
+            this.btnLogin.Name = "btnLogin";
+            this.btnLogin.Size = new System.Drawing.Size(138, 33);
+            this.btnLogin.TabIndex = 4;
+            this.btnLogin.Text = "Login";
+            this.btnLogin.UseVisualStyleBackColor = false;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
+            // 
+            // txtBoxSenha
+            // 
+            this.txtBoxSenha.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtBoxSenha.Location = new System.Drawing.Point(90, 108);
+            this.txtBoxSenha.Name = "txtBoxSenha";
+            this.txtBoxSenha.PasswordChar = '*';
+            this.txtBoxSenha.Size = new System.Drawing.Size(225, 20);
+            this.txtBoxSenha.TabIndex = 3;
+            // 
+            // txtBoxCpf
+            // 
+            this.txtBoxCpf.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtBoxCpf.Location = new System.Drawing.Point(90, 46);
+            this.txtBoxCpf.Name = "txtBoxCpf";
+            this.txtBoxCpf.Size = new System.Drawing.Size(225, 20);
+            this.txtBoxCpf.TabIndex = 2;
             // 
             // txtSenha
             // 
@@ -89,46 +121,15 @@
             this.txtSenha.TabIndex = 1;
             this.txtSenha.Text = "Senha";
             // 
-            // textBox1
+            // txtCPF
             // 
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Location = new System.Drawing.Point(90, 46);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(225, 20);
-            this.textBox1.TabIndex = 2;
-            // 
-            // textBox2
-            // 
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox2.Location = new System.Drawing.Point(90, 108);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(225, 20);
-            this.textBox2.TabIndex = 3;
-            // 
-            // btnLogin
-            // 
-            this.btnLogin.BackColor = System.Drawing.Color.MidnightBlue;
-            this.btnLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogin.ForeColor = System.Drawing.Color.GhostWhite;
-            this.btnLogin.Location = new System.Drawing.Point(53, 158);
-            this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(138, 33);
-            this.btnLogin.TabIndex = 4;
-            this.btnLogin.Text = "Login";
-            this.btnLogin.UseVisualStyleBackColor = false;
-            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
-            // 
-            // btnCadastro
-            // 
-            this.btnCadastro.BackColor = System.Drawing.Color.MidnightBlue;
-            this.btnCadastro.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCadastro.ForeColor = System.Drawing.Color.GhostWhite;
-            this.btnCadastro.Location = new System.Drawing.Point(222, 158);
-            this.btnCadastro.Name = "btnCadastro";
-            this.btnCadastro.Size = new System.Drawing.Size(138, 33);
-            this.btnCadastro.TabIndex = 5;
-            this.btnCadastro.Text = "Cadastro";
-            this.btnCadastro.UseVisualStyleBackColor = false;
+            this.txtCPF.AutoSize = true;
+            this.txtCPF.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCPF.Location = new System.Drawing.Point(87, 27);
+            this.txtCPF.Name = "txtCPF";
+            this.txtCPF.Size = new System.Drawing.Size(36, 16);
+            this.txtCPF.TabIndex = 0;
+            this.txtCPF.Text = "CPF";
             // 
             // loginUsuario
             // 
@@ -154,11 +155,11 @@
 
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtBoxCpf;
         private System.Windows.Forms.Label txtSenha;
         private System.Windows.Forms.Label txtCPF;
         private System.Windows.Forms.Button btnCadastro;
         private System.Windows.Forms.Button btnLogin;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtBoxSenha;
     }
 }
