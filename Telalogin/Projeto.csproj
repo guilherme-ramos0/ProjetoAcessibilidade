@@ -58,6 +58,7 @@
     <Compile Include="Formlaison.Designer.cs">
       <DependentUpon>Formlaison.cs</DependentUpon>
     </Compile>
+    <Compile Include="Login.cs" />
     <Compile Include="view\panel.cs">
       <SubType>Component</SubType>
     </Compile>

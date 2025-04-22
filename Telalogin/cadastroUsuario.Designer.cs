@@ -28,44 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.roundedPictureBox1 = new RoundedPictureBox();
             this.rounde1 = new Rounde();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.txtConfirmarSenha = new System.Windows.Forms.TextBox();
-            this.txtSenha = new System.Windows.Forms.TextBox();
-            this.txtEmail = new System.Windows.Forms.TextBox();
+            this.txtConfirmarPassword = new System.Windows.Forms.TextBox();
+            this.txtPassword = new System.Windows.Forms.TextBox();
             this.txtCPF = new System.Windows.Forms.TextBox();
+            this.txtEmail = new System.Windows.Forms.TextBox();
             this.txtNomeCompleto = new System.Windows.Forms.TextBox();
             this.btnCadastro = new System.Windows.Forms.Button();
             this.lblCadastro = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.roundedPictureBox1)).BeginInit();
             this.rounde1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(614, 315);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(0, 20);
-            this.textBox6.TabIndex = 7;
-            // 
-            // roundedPictureBox1
-            // 
-            this.roundedPictureBox1.CornerRadius = 30;
-            this.roundedPictureBox1.Location = new System.Drawing.Point(402, 81);
-            this.roundedPictureBox1.Name = "roundedPictureBox1";
-            this.roundedPictureBox1.Size = new System.Drawing.Size(8, 8);
-            this.roundedPictureBox1.TabIndex = 8;
-            this.roundedPictureBox1.TabStop = false;
             // 
             // rounde1
             // 
             this.rounde1.BackColor = System.Drawing.Color.AliceBlue;
             this.rounde1.Controls.Add(this.panel2);
             this.rounde1.CornerRadius = 30;
-            this.rounde1.Location = new System.Drawing.Point(291, 81);
+            this.rounde1.Location = new System.Drawing.Point(290, 63);
             this.rounde1.Name = "rounde1";
             this.rounde1.Padding = new System.Windows.Forms.Padding(60, 30, 60, 30);
             this.rounde1.Size = new System.Drawing.Size(517, 474);
@@ -74,10 +55,10 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.Highlight;
-            this.panel2.Controls.Add(this.txtConfirmarSenha);
-            this.panel2.Controls.Add(this.txtSenha);
-            this.panel2.Controls.Add(this.txtEmail);
+            this.panel2.Controls.Add(this.txtConfirmarPassword);
+            this.panel2.Controls.Add(this.txtPassword);
             this.panel2.Controls.Add(this.txtCPF);
+            this.panel2.Controls.Add(this.txtEmail);
             this.panel2.Controls.Add(this.txtNomeCompleto);
             this.panel2.Controls.Add(this.btnCadastro);
             this.panel2.Controls.Add(this.lblCadastro);
@@ -87,23 +68,38 @@
             this.panel2.Size = new System.Drawing.Size(397, 414);
             this.panel2.TabIndex = 0;
             // 
-            // txtConfirmarSenha
+            // txtConfirmarPassword
             // 
-            this.txtConfirmarSenha.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtConfirmarSenha.Location = new System.Drawing.Point(89, 270);
-            this.txtConfirmarSenha.Name = "txtConfirmarSenha";
-            this.txtConfirmarSenha.Size = new System.Drawing.Size(212, 23);
-            this.txtConfirmarSenha.TabIndex = 10;
-            this.txtConfirmarSenha.Text = "Confirmar Senha";
+            this.txtConfirmarPassword.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtConfirmarPassword.Location = new System.Drawing.Point(89, 263);
+            this.txtConfirmarPassword.Name = "txtConfirmarPassword";
+            this.txtConfirmarPassword.Size = new System.Drawing.Size(212, 23);
+            this.txtConfirmarPassword.TabIndex = 13;
+            this.txtConfirmarPassword.Text = "Confirmar Senha";
+            //this.txtConfirmarPassword.Enter += new System.EventHandler(this.txtConfirmarSenha_Enter);
+            //this.txtConfirmarPassword.Leave += new System.EventHandler(this.txtSConfirmarSenha_Leave);
             // 
-            // txtSenha
+            // txtPassword
             // 
-            this.txtSenha.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtSenha.Location = new System.Drawing.Point(89, 218);
-            this.txtSenha.Name = "txtSenha";
-            this.txtSenha.Size = new System.Drawing.Size(212, 23);
-            this.txtSenha.TabIndex = 9;
-            this.txtSenha.Text = "Senha";
+            this.txtPassword.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtPassword.Location = new System.Drawing.Point(89, 218);
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.Size = new System.Drawing.Size(212, 23);
+            this.txtPassword.TabIndex = 12;
+            this.txtPassword.Text = "Senha";
+            //this.txtPassword.Enter += new System.EventHandler(this.txtSenha_Enter);
+            //this.txtPassword.Leave += new System.EventHandler(this.txtSenha_Leave);
+            // 
+            // txtCPF
+            // 
+            this.txtCPF.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtCPF.Location = new System.Drawing.Point(89, 124);
+            this.txtCPF.Name = "txtCPF";
+            this.txtCPF.Size = new System.Drawing.Size(212, 23);
+            this.txtCPF.TabIndex = 11;
+            this.txtCPF.Text = "CPF";
+            this.txtCPF.Enter += new System.EventHandler(this.txtCPF_Enter);
+            this.txtCPF.Leave += new System.EventHandler(this.txtCPF_Leave);
             // 
             // txtEmail
             // 
@@ -113,16 +109,9 @@
             this.txtEmail.Size = new System.Drawing.Size(212, 23);
             this.txtEmail.TabIndex = 8;
             this.txtEmail.Text = "Email";
-            // 
-            // txtCPF
-            // 
-            this.txtCPF.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.txtCPF.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtCPF.Location = new System.Drawing.Point(89, 122);
-            this.txtCPF.Name = "txtCPF";
-            this.txtCPF.Size = new System.Drawing.Size(212, 23);
-            this.txtCPF.TabIndex = 7;
-            this.txtCPF.Text = "CPF";
+            this.txtEmail.TextChanged += new System.EventHandler(this.txtEmail_Enter);
+            this.txtEmail.Enter += new System.EventHandler(this.txtEmail_Enter);
+            this.txtEmail.Leave += new System.EventHandler(this.txtEmail_Leave);
             // 
             // txtNomeCompleto
             // 
@@ -132,6 +121,8 @@
             this.txtNomeCompleto.Size = new System.Drawing.Size(212, 23);
             this.txtNomeCompleto.TabIndex = 2;
             this.txtNomeCompleto.Text = "Nome Completo";
+            this.txtNomeCompleto.Enter += new System.EventHandler(this.txtNomeCompleto_Enter);
+            this.txtNomeCompleto.Leave += new System.EventHandler(this.txtNomeCompleto_Leave);
             // 
             // btnCadastro
             // 
@@ -156,7 +147,6 @@
             this.lblCadastro.Size = new System.Drawing.Size(208, 30);
             this.lblCadastro.TabIndex = 0;
             this.lblCadastro.Text = "Realize seu Cadastro";
-            this.lblCadastro.Click += new System.EventHandler(this.lblCadastro_Click);
             // 
             // CadastroUsuario
             // 
@@ -166,20 +156,16 @@
             this.BackgroundImage = global::Telalogin.Properties.Resources.fundo1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1086, 628);
-            this.Controls.Add(this.roundedPictureBox1);
-            this.Controls.Add(this.textBox6);
             this.Controls.Add(this.rounde1);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Name = "CadastroUsuario";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.CadastroUsuario_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.roundedPictureBox1)).EndInit();
             this.rounde1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -187,13 +173,11 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button btnCadastro;
         private System.Windows.Forms.Label lblCadastro;
-        private System.Windows.Forms.TextBox txtConfirmarSenha;
-        private System.Windows.Forms.TextBox txtSenha;
         private System.Windows.Forms.TextBox txtEmail;
-        private System.Windows.Forms.TextBox txtCPF;
         private System.Windows.Forms.TextBox txtNomeCompleto;
-        private System.Windows.Forms.TextBox textBox6;
-        private RoundedPictureBox roundedPictureBox1;
         private Rounde rounde1;
+        private System.Windows.Forms.TextBox txtCPF;
+        private System.Windows.Forms.TextBox txtConfirmarPassword;
+        private System.Windows.Forms.TextBox txtPassword;
     }
 }

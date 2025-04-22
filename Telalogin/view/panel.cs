@@ -24,7 +24,6 @@ public class Rounde : Panel
             // Aplicar a região ao controle
             Region = new Region(path);
 
-
         }
     }
 
