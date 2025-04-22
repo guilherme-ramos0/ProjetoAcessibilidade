@@ -76,8 +76,8 @@
             this.txtConfirmarPassword.Size = new System.Drawing.Size(212, 23);
             this.txtConfirmarPassword.TabIndex = 13;
             this.txtConfirmarPassword.Text = "Confirmar Senha";
-            //this.txtConfirmarPassword.Enter += new System.EventHandler(this.txtConfirmarSenha_Enter);
-            //this.txtConfirmarPassword.Leave += new System.EventHandler(this.txtSConfirmarSenha_Leave);
+            this.txtConfirmarPassword.Enter += new System.EventHandler(this.txtConfirmarPassword_Enter);
+            this.txtConfirmarPassword.Leave += new System.EventHandler(this.txtConfirmarPassword_Leave);
             // 
             // txtPassword
             // 
@@ -87,8 +87,8 @@
             this.txtPassword.Size = new System.Drawing.Size(212, 23);
             this.txtPassword.TabIndex = 12;
             this.txtPassword.Text = "Senha";
-            //this.txtPassword.Enter += new System.EventHandler(this.txtSenha_Enter);
-            //this.txtPassword.Leave += new System.EventHandler(this.txtSenha_Leave);
+            this.txtPassword.Enter += new System.EventHandler(this.txtPassword_Enter);
+            this.txtPassword.Leave += new System.EventHandler(this.txtPassword_Leave);
             // 
             // txtCPF
             // 
@@ -109,7 +109,6 @@
             this.txtEmail.Size = new System.Drawing.Size(212, 23);
             this.txtEmail.TabIndex = 8;
             this.txtEmail.Text = "Email";
-            this.txtEmail.TextChanged += new System.EventHandler(this.txtEmail_Enter);
             this.txtEmail.Enter += new System.EventHandler(this.txtEmail_Enter);
             this.txtEmail.Leave += new System.EventHandler(this.txtEmail_Leave);
             // 
