@@ -114,28 +114,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="TelaCadastro.cs">
-      <SubType>Form</SubType>
+
     </Compile>
-    <Compile Include="TelaCadastro.Designer.cs">
-      <DependentUpon>TelaCadastro.cs</DependentUpon>
-    </Compile>
-    <Compile Include="view\loginUsuario.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="view\loginUsuario.Designer.cs">
-      <DependentUpon>loginUsuario.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Program.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="view\RoundedPictureBox.cs">
+    <Compile Include="Login.cs" />
+    <Compile Include="view\panel.cs">
       <SubType>Component</SubType>
     </Compile>
-    <EmbeddedResource Include="TelaCadastro.resx">
-      <DependentUpon>TelaCadastro.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="view\loginUsuario.resx">
-      <DependentUpon>loginUsuario.cs</DependentUpon>
+
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -147,7 +132,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <None Include="packages.config" />
+
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -157,6 +142,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="view\.editorconfig" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -166,16 +152,7 @@
     <Folder Include="model\" />
   </ItemGroup>
   <ItemGroup>
-    <BootstrapperPackage Include=".NETFramework,Version=v4.8">
-      <Visible>False</Visible>
-      <ProductName>Microsoft .NET Framework 4.8 %28x86 e x64%29</ProductName>
-      <Install>true</Install>
-    </BootstrapperPackage>
-    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
-      <Visible>False</Visible>
-      <ProductName>.NET Framework 3.5 SP1</ProductName>
-      <Install>false</Install>
-    </BootstrapperPackage>
+
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

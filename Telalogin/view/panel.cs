@@ -3,7 +3,7 @@ using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Windows.Forms;
 
-public class RoundedPictureBox : PictureBox
+public class Rounde : Panel
 {
     // Raio dos cantos arredondados (ajuste conforme necessário)
     public int CornerRadius { get; set; } = 30;
@@ -24,12 +24,6 @@ public class RoundedPictureBox : PictureBox
             // Aplicar a região ao controle
             Region = new Region(path);
 
-            // Desenhar a imagem (se houver)
-            if (Image != null)
-            {
-                e.Graphics.SmoothingMode = SmoothingMode.AntiAlias;
-                e.Graphics.DrawImage(Image, ClientRectangle);
-            }
         }
     }
 
