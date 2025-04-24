@@ -114,6 +114,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="model\tabelas.cs" />
     <Compile Include="view\desings\BordaRedonda.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -166,7 +167,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="controller\" />
-    <Folder Include="model\" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.8">
