@@ -39,9 +39,9 @@ namespace Telalogin
                 return;
             }
 
-            if (cpf.Contains(",") || senha.Contains(","))
+            if (cpf.Contains(".") || senha.Contains(","))
             {
-                MessageBox.Show("Os campos não podem conter vírgulas.");
+                MessageBox.Show("Os campos não podem conter vírgulas e pontos.");
                 return;
             }
 
@@ -72,6 +72,24 @@ namespace Telalogin
             else
             {
                 MessageBox.Show("CPF ou senha inválidos.");
+            }
+        }
+
+        private void txtBoxCpf_Enter(object sender, EventArgs e)
+        {
+            if(txtBoxCpf.Text == "___")
+            {
+                txtBoxCpf.Text = "";
+                txtBoxCpf.ForeColor = Color.Black;
+            }
+        }
+
+        private void txtBoxCpf_Leave(object sender, EventArgs e)
+        {
+            if( txtBoxCpf.Text == "")
+            {
+                txtBoxCpf.Text = "___";
+                txtBoxCpf.ForeColor= Color.Gray;
             }
         }
 

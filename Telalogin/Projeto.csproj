@@ -117,6 +117,9 @@
     <Compile Include="view\desings\BordaRedonda.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="view\desings\BotaoBordaArredondada.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="view\loginUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
