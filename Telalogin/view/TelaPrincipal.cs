@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Telalogin
+namespace Telalogin.view
 {
-    public partial class TelaCadastro: Form
+    public partial class TelaPrincipal: Form
     {
-        public TelaCadastro()
+        public TelaPrincipal()
         {
             InitializeComponent();
         }
