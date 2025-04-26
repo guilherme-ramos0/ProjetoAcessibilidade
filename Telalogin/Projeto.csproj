@@ -121,6 +121,7 @@
     <Compile Include="view\desings\BotaoBordaArredondada.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="view\desings\PlaceholderHelper.cs" />
     <Compile Include="view\loginUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -129,6 +130,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="view\TelaCadastro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\TelaCadastro.Designer.cs">
+      <DependentUpon>TelaCadastro.cs</DependentUpon>
+    </Compile>
     <Compile Include="view\TelaPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -148,6 +155,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="view\TelaCadastro.resx">
+      <DependentUpon>TelaCadastro.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="view\TelaPrincipal.resx">
       <DependentUpon>TelaPrincipal.cs</DependentUpon>
     </EmbeddedResource>
