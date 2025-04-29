@@ -18,16 +18,6 @@ namespace Telalogin
         {
             InitializeComponent();
         }
-
-        private string HashSenha(string senha)
-        {
-            using (SHA256 sha256 = SHA256.Create())
-            {
-                byte[] hashBytes = sha256.ComputeHash(Encoding.UTF8.GetBytes(senha));
-                return Convert.ToBase64String(hashBytes);
-            }
-        }
-
         private void btnLogin_Click(object sender, EventArgs e)
         {
             string cpf = txtBoxCpf.Text;
@@ -71,7 +61,15 @@ namespace Telalogin
             }
             else
             {
-                MessageBox.Show("CPF ou senha inválidos.");
+                MessageBox.Show("CPF ou senha inválidos. Tente Novamente.");
+            }
+        }
+        private string HashSenha(string senha)
+        {
+            using (SHA256 sha256 = SHA256.Create())
+            {
+                byte[] hashBytes = sha256.ComputeHash(Encoding.UTF8.GetBytes(senha));
+                return Convert.ToBase64String(hashBytes);
             }
         }
 
