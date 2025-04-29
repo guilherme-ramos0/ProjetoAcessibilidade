@@ -1,24 +1,18 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.IO;
-using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Telalogin
 {
-    public partial class loginUsuario : Form
+    partial class loginUsuario : Form
     {
         public loginUsuario()
         {
             InitializeComponent();
         }
-        private void btnLogin_Click(object sender, EventArgs e)
+        private void btnLogin_Click1(object sender, EventArgs e)
         {
             string cpf = txtBoxCpf.Text;
             string senha = txtBoxSenha.Text;
@@ -71,6 +65,11 @@ namespace Telalogin
                 byte[] hashBytes = sha256.ComputeHash(Encoding.UTF8.GetBytes(senha));
                 return Convert.ToBase64String(hashBytes);
             }
+        }
+
+        private void txtBoxCpf_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        {
+
         }
 
         /*public void btnCadastro_Click(object sender, EventArgs e)

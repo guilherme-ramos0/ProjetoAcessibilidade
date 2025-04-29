@@ -114,11 +114,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="TelaCadastro.cs">
-      <SubType>Form</SubType>
+    <Compile Include="view\BordaRedonda.cs">
+      <SubType>Component</SubType>
     </Compile>
-    <Compile Include="TelaCadastro.Designer.cs">
-      <DependentUpon>TelaCadastro.cs</DependentUpon>
+    <Compile Include="view\BotaoBordaArredondada.cs">
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="view\loginUsuario.cs">
       <SubType>Form</SubType>
@@ -128,12 +128,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="view\RoundedPictureBox.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <EmbeddedResource Include="TelaCadastro.resx">
-      <DependentUpon>TelaCadastro.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="view\loginUsuario.resx">
       <DependentUpon>loginUsuario.cs</DependentUpon>
     </EmbeddedResource>
