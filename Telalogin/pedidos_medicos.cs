@@ -22,7 +22,17 @@ namespace Telalogin
 
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void tableLayoutPanel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void botaoBordaArrendondada1_Click(object sender, EventArgs e)
         {
 
         }
