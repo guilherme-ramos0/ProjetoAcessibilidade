@@ -160,6 +160,12 @@
     <Compile Include="view\TelaPrincipal.Designer.cs">
       <DependentUpon>TelaPrincipal.cs</DependentUpon>
     </Compile>
+    <Compile Include="view\TelaSolicitação.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\TelaSolicitação.Designer.cs">
+      <DependentUpon>TelaSolicitação.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="view\AgendarConsulta.resx">
       <DependentUpon>AgendarConsulta.cs</DependentUpon>
     </EmbeddedResource>
