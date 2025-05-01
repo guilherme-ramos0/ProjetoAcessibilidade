@@ -191,6 +191,9 @@
     <EmbeddedResource Include="view\TelaPrincipal.resx">
       <DependentUpon>TelaPrincipal.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="view\TelaSolicitação.resx">
+      <DependentUpon>TelaSolicitação.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
