@@ -127,6 +127,9 @@
     <Compile Include="view\desings\BordaRedonda.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="view\desings\BorderedTableLayoutPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="view\desings\BotaoBordaArredondada.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -173,6 +176,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="view\PedidoMedico.resx">
+      <DependentUpon>PedidoMedico.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="view\TelaCadastro.resx">
       <DependentUpon>TelaCadastro.cs</DependentUpon>
     </EmbeddedResource>
