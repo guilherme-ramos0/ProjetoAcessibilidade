@@ -154,6 +154,12 @@
     <Compile Include="view\TelaCadastro.Designer.cs">
       <DependentUpon>TelaCadastro.cs</DependentUpon>
     </Compile>
+    <Compile Include="view\TelaMarcarTerapia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\TelaMarcarTerapia.Designer.cs">
+      <DependentUpon>TelaMarcarTerapia.cs</DependentUpon>
+    </Compile>
     <Compile Include="view\TelaPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -187,6 +193,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="view\TelaCadastro.resx">
       <DependentUpon>TelaCadastro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\TelaMarcarTerapia.resx">
+      <DependentUpon>TelaMarcarTerapia.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="view\TelaPrincipal.resx">
       <DependentUpon>TelaPrincipal.cs</DependentUpon>
