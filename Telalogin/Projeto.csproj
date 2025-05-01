@@ -122,6 +122,12 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="view\desings\PlaceholderHelper.cs" />
+    <Compile Include="view\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
     <Compile Include="view\loginUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -142,6 +148,9 @@
     <Compile Include="view\TelaPrincipal.Designer.cs">
       <DependentUpon>TelaPrincipal.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="view\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="view\loginUsuario.resx">
       <DependentUpon>loginUsuario.cs</DependentUpon>
     </EmbeddedResource>

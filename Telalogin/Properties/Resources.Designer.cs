@@ -63,9 +63,9 @@ namespace Telalogin.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap imagem {
+        internal static System.Drawing.Bitmap _1745972170344 {
             get {
-                object obj = ResourceManager.GetObject("imagem", resourceCulture);
+                object obj = ResourceManager.GetObject("1745972170344", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -73,9 +73,9 @@ namespace Telalogin.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap imagem1 {
+        internal static System.Drawing.Bitmap _1745972972687 {
             get {
-                object obj = ResourceManager.GetObject("imagem1", resourceCulture);
+                object obj = ResourceManager.GetObject("1745972972687", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -83,9 +83,89 @@ namespace Telalogin.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap imagem2 {
+        internal static System.Drawing.Bitmap _17459729726871 {
             get {
-                object obj = ResourceManager.GetObject("imagem2", resourceCulture);
+                object obj = ResourceManager.GetObject("17459729726871", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap doutor {
+            get {
+                object obj = ResourceManager.GetObject("doutor", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap doutor1 {
+            get {
+                object obj = ResourceManager.GetObject("doutor1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap fundo_1__1_ {
+            get {
+                object obj = ResourceManager.GetObject("fundo 1 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap fundo_1__3_ {
+            get {
+                object obj = ResourceManager.GetObject("fundo 1 (3)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Inserir_um_subtítulo__1_ {
+            get {
+                object obj = ResourceManager.GetObject("Inserir um subtítulo (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap mao {
+            get {
+                object obj = ResourceManager.GetObject("mao", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap shared_image {
+            get {
+                object obj = ResourceManager.GetObject("shared image", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap shared_image__1_ {
+            get {
+                object obj = ResourceManager.GetObject("shared image (1)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
