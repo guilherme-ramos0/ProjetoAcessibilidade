@@ -106,5 +106,12 @@ namespace Telalogin.view
             txtSenha.UseSystemPasswordChar = !chkMostrarSenha.Checked;
             txtConfirmarSenha.UseSystemPasswordChar = !chkMostrarSenha.Checked;
         }
+
+        private void botaoBordaArredondada2_Click(object sender, EventArgs e)
+        {
+            loginUsuario loginUsuario = new loginUsuario();
+            loginUsuario.Show();
+            this.Hide();
+        }
     }
 }

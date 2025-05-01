@@ -9,6 +9,7 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Telalogin.view;
 
 namespace Telalogin
 {
@@ -29,6 +30,29 @@ namespace Telalogin
         }
 
         private void btnLogin_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void txtBoxCpf_Enter(object sender, EventArgs e)
+        {
+            if(txtBoxCpf.Text == "___")
+            {
+                txtBoxCpf.Text = "";
+                txtBoxCpf.ForeColor = Color.Black;
+            }
+        }
+
+        private void txtBoxCpf_Leave(object sender, EventArgs e)
+        {
+            if( txtBoxCpf.Text == "")
+            {
+                txtBoxCpf.Text = "___";
+                txtBoxCpf.ForeColor= Color.Gray;
+            }
+        }
+
+        private void btnLogin_Click_1(object sender, EventArgs e)
         {
             string cpf = txtBoxCpf.Text;
             string senha = txtBoxSenha.Text;
@@ -75,29 +99,16 @@ namespace Telalogin
             }
         }
 
-        private void txtBoxCpf_Enter(object sender, EventArgs e)
+        private void btnCadastro_Click(object sender, EventArgs e)
         {
-            if(txtBoxCpf.Text == "___")
-            {
-                txtBoxCpf.Text = "";
-                txtBoxCpf.ForeColor = Color.Black;
-            }
-        }
-
-        private void txtBoxCpf_Leave(object sender, EventArgs e)
-        {
-            if( txtBoxCpf.Text == "")
-            {
-                txtBoxCpf.Text = "___";
-                txtBoxCpf.ForeColor= Color.Gray;
-            }
+            TelaCadastro telaCadastro = new TelaCadastro();
+            telaCadastro.Show();
+            this.Hide();
         }
 
         /*public void btnCadastro_Click(object sender, EventArgs e)
         {
-            CadastroUsuario cadastro = new CadastroUsuario();
-            cadastro.Show();
-            this.Hide();
+            
         }*/
     }
 }

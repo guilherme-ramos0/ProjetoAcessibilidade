@@ -60,11 +60,11 @@
             this.tableLayoutPanel1.Controls.Add(this.bordaredonda1, 0, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Right;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(2);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(866, 525);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1155, 646);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // bordaredonda1
@@ -73,10 +73,10 @@
             this.bordaredonda1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(74)))), ((int)(((byte)(173)))));
             this.bordaredonda1.Controls.Add(this.bordaredonda2);
             this.bordaredonda1.CornerRadius = 80;
-            this.bordaredonda1.Location = new System.Drawing.Point(249, 27);
-            this.bordaredonda1.Margin = new System.Windows.Forms.Padding(2);
+            this.bordaredonda1.Location = new System.Drawing.Point(332, 33);
+            this.bordaredonda1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bordaredonda1.Name = "bordaredonda1";
-            this.bordaredonda1.Size = new System.Drawing.Size(368, 471);
+            this.bordaredonda1.Size = new System.Drawing.Size(491, 580);
             this.bordaredonda1.TabIndex = 0;
             // 
             // bordaredonda2
@@ -97,10 +97,10 @@
             this.bordaredonda2.Controls.Add(this.mtxtCpf);
             this.bordaredonda2.Controls.Add(this.label1);
             this.bordaredonda2.CornerRadius = 80;
-            this.bordaredonda2.Location = new System.Drawing.Point(26, 21);
-            this.bordaredonda2.Margin = new System.Windows.Forms.Padding(2);
+            this.bordaredonda2.Location = new System.Drawing.Point(35, 26);
+            this.bordaredonda2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bordaredonda2.Name = "bordaredonda2";
-            this.bordaredonda2.Size = new System.Drawing.Size(314, 422);
+            this.bordaredonda2.Size = new System.Drawing.Size(419, 519);
             this.bordaredonda2.TabIndex = 0;
             // 
             // chkMostrarSenha
@@ -108,10 +108,10 @@
             this.chkMostrarSenha.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.chkMostrarSenha.BackColor = System.Drawing.Color.Transparent;
             this.chkMostrarSenha.CheckAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.chkMostrarSenha.Location = new System.Drawing.Point(243, 257);
-            this.chkMostrarSenha.Margin = new System.Windows.Forms.Padding(2);
+            this.chkMostrarSenha.Location = new System.Drawing.Point(324, 316);
+            this.chkMostrarSenha.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chkMostrarSenha.Name = "chkMostrarSenha";
-            this.chkMostrarSenha.Size = new System.Drawing.Size(54, 46);
+            this.chkMostrarSenha.Size = new System.Drawing.Size(72, 57);
             this.chkMostrarSenha.TabIndex = 13;
             this.chkMostrarSenha.Text = "Mostrar senha";
             this.chkMostrarSenha.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -126,13 +126,14 @@
             this.botaoBordaArredondada2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.botaoBordaArredondada2.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.botaoBordaArredondada2.ForeColor = System.Drawing.Color.White;
-            this.botaoBordaArredondada2.Location = new System.Drawing.Point(61, 359);
-            this.botaoBordaArredondada2.Margin = new System.Windows.Forms.Padding(2);
+            this.botaoBordaArredondada2.Location = new System.Drawing.Point(81, 442);
+            this.botaoBordaArredondada2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.botaoBordaArredondada2.Name = "botaoBordaArredondada2";
-            this.botaoBordaArredondada2.Size = new System.Drawing.Size(73, 30);
+            this.botaoBordaArredondada2.Size = new System.Drawing.Size(97, 37);
             this.botaoBordaArredondada2.TabIndex = 12;
             this.botaoBordaArredondada2.Text = "Login";
             this.botaoBordaArredondada2.UseVisualStyleBackColor = false;
+            this.botaoBordaArredondada2.Click += new System.EventHandler(this.botaoBordaArredondada2_Click);
             // 
             // botaoBordaArredondada1
             // 
@@ -142,10 +143,10 @@
             this.botaoBordaArredondada1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.botaoBordaArredondada1.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.botaoBordaArredondada1.ForeColor = System.Drawing.Color.White;
-            this.botaoBordaArredondada1.Location = new System.Drawing.Point(165, 359);
-            this.botaoBordaArredondada1.Margin = new System.Windows.Forms.Padding(2);
+            this.botaoBordaArredondada1.Location = new System.Drawing.Point(220, 442);
+            this.botaoBordaArredondada1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.botaoBordaArredondada1.Name = "botaoBordaArredondada1";
-            this.botaoBordaArredondada1.Size = new System.Drawing.Size(87, 30);
+            this.botaoBordaArredondada1.Size = new System.Drawing.Size(116, 37);
             this.botaoBordaArredondada1.TabIndex = 11;
             this.botaoBordaArredondada1.Text = "Cadastrar";
             this.botaoBordaArredondada1.UseVisualStyleBackColor = false;
@@ -154,10 +155,9 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(58, 64);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.Location = new System.Drawing.Point(77, 79);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(122, 18);
+            this.label6.Size = new System.Drawing.Size(151, 23);
             this.label6.TabIndex = 10;
             this.label6.Text = "Nome Completo";
             // 
@@ -165,10 +165,9 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(58, 116);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Location = new System.Drawing.Point(77, 143);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(41, 18);
+            this.label5.Size = new System.Drawing.Size(49, 23);
             this.label5.TabIndex = 9;
             this.label5.Text = "CPF";
             // 
@@ -176,10 +175,9 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(59, 171);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Location = new System.Drawing.Point(79, 210);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(48, 18);
+            this.label4.Size = new System.Drawing.Size(58, 23);
             this.label4.TabIndex = 8;
             this.label4.Text = "Email";
             // 
@@ -187,10 +185,9 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(59, 228);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(79, 281);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(53, 18);
+            this.label3.Size = new System.Drawing.Size(65, 23);
             this.label3.TabIndex = 7;
             this.label3.Text = "Senha";
             // 
@@ -198,77 +195,78 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(58, 285);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(77, 351);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(123, 18);
+            this.label2.Size = new System.Drawing.Size(154, 23);
             this.label2.TabIndex = 6;
             this.label2.Text = "Confirmar senha";
             // 
             // txtConfirmarSenha
             // 
-            this.txtConfirmarSenha.Location = new System.Drawing.Point(62, 306);
-            this.txtConfirmarSenha.Margin = new System.Windows.Forms.Padding(2);
+            this.txtConfirmarSenha.Location = new System.Drawing.Point(83, 377);
+            this.txtConfirmarSenha.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtConfirmarSenha.Name = "txtConfirmarSenha";
-            this.txtConfirmarSenha.Size = new System.Drawing.Size(177, 20);
+            this.txtConfirmarSenha.Size = new System.Drawing.Size(235, 22);
             this.txtConfirmarSenha.TabIndex = 5;
             this.txtConfirmarSenha.Enter += new System.EventHandler(this.txtConfirmarSenha_Enter);
             this.txtConfirmarSenha.Leave += new System.EventHandler(this.txtConfirmarSenha_Leave);
             // 
             // txtSenha
             // 
-            this.txtSenha.Location = new System.Drawing.Point(62, 249);
-            this.txtSenha.Margin = new System.Windows.Forms.Padding(2);
+            this.txtSenha.Location = new System.Drawing.Point(83, 306);
+            this.txtSenha.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtSenha.Name = "txtSenha";
-            this.txtSenha.Size = new System.Drawing.Size(177, 20);
+            this.txtSenha.Size = new System.Drawing.Size(235, 22);
             this.txtSenha.TabIndex = 4;
             this.txtSenha.Enter += new System.EventHandler(this.txtSenha_Enter);
             this.txtSenha.Leave += new System.EventHandler(this.txtSenha_Leave);
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(62, 192);
-            this.txtEmail.Margin = new System.Windows.Forms.Padding(2);
+            this.txtEmail.Location = new System.Drawing.Point(83, 236);
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(177, 20);
+            this.txtEmail.Size = new System.Drawing.Size(235, 22);
             this.txtEmail.TabIndex = 3;
             // 
             // txtNomeCompleto
             // 
-            this.txtNomeCompleto.Location = new System.Drawing.Point(62, 85);
-            this.txtNomeCompleto.Margin = new System.Windows.Forms.Padding(2);
+            this.txtNomeCompleto.Location = new System.Drawing.Point(83, 105);
+            this.txtNomeCompleto.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtNomeCompleto.Name = "txtNomeCompleto";
-            this.txtNomeCompleto.Size = new System.Drawing.Size(177, 20);
+            this.txtNomeCompleto.Size = new System.Drawing.Size(235, 22);
             this.txtNomeCompleto.TabIndex = 2;
             // 
             // mtxtCpf
             // 
-            this.mtxtCpf.Location = new System.Drawing.Point(62, 137);
-            this.mtxtCpf.Margin = new System.Windows.Forms.Padding(2);
+            this.mtxtCpf.Location = new System.Drawing.Point(83, 169);
+            this.mtxtCpf.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.mtxtCpf.Mask = "000,000,000-00";
             this.mtxtCpf.Name = "mtxtCpf";
-            this.mtxtCpf.Size = new System.Drawing.Size(177, 20);
+            this.mtxtCpf.Size = new System.Drawing.Size(235, 22);
             this.mtxtCpf.TabIndex = 1;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(58, 26);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(77, 32);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(181, 22);
+            this.label1.Size = new System.Drawing.Size(215, 27);
             this.label1.TabIndex = 0;
             this.label1.Text = "Faça seu cadastro";
             // 
             // TelaCadastro
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(866, 525);
+            this.ClientSize = new System.Drawing.Size(1155, 646);
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.MaximizeBox = false;
             this.Name = "TelaCadastro";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TelaCadastro";
             this.Load += new System.EventHandler(this.TelaCadastro_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
