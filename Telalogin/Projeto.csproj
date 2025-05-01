@@ -118,6 +118,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="model\tabelas.cs" />
+    <Compile Include="view\AgendarConsulta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\AgendarConsulta.Designer.cs">
+      <DependentUpon>AgendarConsulta.cs</DependentUpon>
+    </Compile>
     <Compile Include="view\desings\BordaRedonda.cs">
       <SubType>Component</SubType>
     </Compile>
