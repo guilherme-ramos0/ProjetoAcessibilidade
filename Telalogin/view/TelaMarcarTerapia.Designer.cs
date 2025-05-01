@@ -95,11 +95,12 @@
             // tableLayoutPanel3
             // 
             this.tableLayoutPanel3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.tableLayoutPanel3.BackColor = System.Drawing.Color.Transparent;
             this.tableLayoutPanel3.ColumnCount = 4;
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 35.20599F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 64.79401F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 394F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 244F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 381F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 257F));
             this.tableLayoutPanel3.Controls.Add(this.label24, 3, 5);
             this.tableLayoutPanel3.Controls.Add(this.label23, 2, 5);
             this.tableLayoutPanel3.Controls.Add(this.label22, 1, 5);
@@ -124,7 +125,7 @@
             this.tableLayoutPanel3.Controls.Add(this.label3, 2, 0);
             this.tableLayoutPanel3.Controls.Add(this.label2, 1, 0);
             this.tableLayoutPanel3.Controls.Add(this.label1, 0, 0);
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(74, 44);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(67, 44);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 6;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 43.62416F));
@@ -133,224 +134,281 @@
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 102F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 108F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 123F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(1149, 587);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(1163, 587);
             this.tableLayoutPanel3.TabIndex = 0;
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(3, 0);
+            this.label1.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(74)))), ((int)(((byte)(173)))));
+            this.label1.Location = new System.Drawing.Point(49, 15);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(44, 16);
+            this.label1.Size = new System.Drawing.Size(86, 35);
             this.label1.TabIndex = 0;
-            this.label1.Text = "label1";
+            this.label1.Text = "Zona";
             // 
             // label2
             // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(182, 0);
+            this.label2.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(74)))), ((int)(((byte)(173)))));
+            this.label2.Location = new System.Drawing.Point(227, 15);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(44, 16);
+            this.label2.Size = new System.Drawing.Size(254, 35);
             this.label2.TabIndex = 1;
-            this.label2.Text = "label2";
+            this.label2.Text = "Nome do médico";
             // 
             // label3
             // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(513, 0);
+            this.label3.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(74)))), ((int)(((byte)(173)))));
+            this.label3.Location = new System.Drawing.Point(564, 15);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(44, 16);
+            this.label3.Size = new System.Drawing.Size(300, 35);
             this.label3.TabIndex = 2;
-            this.label3.Text = "label3";
+            this.label3.Text = "Endereço e telefone";
             // 
             // label4
             // 
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(907, 0);
+            this.label4.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(74)))), ((int)(((byte)(173)))));
+            this.label4.Location = new System.Drawing.Point(908, 15);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(44, 16);
+            this.label4.Size = new System.Drawing.Size(251, 35);
             this.label4.TabIndex = 3;
-            this.label4.Text = "label4";
+            this.label4.Text = "Datas e horários";
             // 
             // label5
             // 
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(3, 65);
+            this.label5.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(61, 95);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(44, 16);
+            this.label5.Size = new System.Drawing.Size(62, 24);
             this.label5.TabIndex = 4;
-            this.label5.Text = "label5";
+            this.label5.Text = "Norte";
             // 
             // label6
             // 
+            this.label6.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(182, 65);
+            this.label6.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(206, 84);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(44, 16);
+            this.label6.Size = new System.Drawing.Size(295, 46);
             this.label6.TabIndex = 5;
-            this.label6.Text = "label6";
+            this.label6.Text = "Irani Pereira Alves CRP: 029502\r\n   Janaina Kitz CRP: 092347";
             // 
             // label7
             // 
+            this.label7.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(513, 65);
+            this.label7.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(533, 78);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(44, 16);
+            this.label7.Size = new System.Drawing.Size(363, 57);
             this.label7.TabIndex = 6;
-            this.label7.Text = "label7";
+            this.label7.Text = "Avenida Itaberaba, 1200 - Sala 13 - (11) 918561378\r\n Avenida Cruzeiro do Sul, 312" +
+    " -  (11) 919254022";
             // 
             // label8
             // 
+            this.label8.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(907, 65);
+            this.label8.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(931, 84);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(44, 16);
+            this.label8.Size = new System.Drawing.Size(205, 46);
             this.label8.TabIndex = 7;
-            this.label8.Text = "label8";
+            this.label8.Text = "20/05/24 - 10h30, 14h\r\n21/05/24 - 14h30, 15h";
             // 
             // label9
             // 
+            this.label9.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(3, 149);
+            this.label9.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(72, 189);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(44, 16);
+            this.label9.Size = new System.Drawing.Size(40, 24);
             this.label9.TabIndex = 8;
-            this.label9.Text = "label9";
+            this.label9.Text = "Sul";
             // 
             // label10
             // 
+            this.label10.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(182, 149);
+            this.label10.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(203, 178);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(51, 16);
+            this.label10.Size = new System.Drawing.Size(302, 46);
             this.label10.TabIndex = 9;
-            this.label10.Text = "label10";
+            this.label10.Text = "Marco Silvio Lopes CRP: 001254\r\n   Juliana Silva CRP: 011278";
             // 
             // label11
             // 
+            this.label11.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(513, 149);
+            this.label11.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(528, 172);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(51, 16);
+            this.label11.Size = new System.Drawing.Size(372, 57);
             this.label11.TabIndex = 10;
-            this.label11.Text = "label11";
+            this.label11.Text = "Rua Oscar Freire, 4507 - Sala 110 - (11) 995571593\r\n Avenida Paulista, 2378 - Sal" +
+    "a 1 - (11) 932259073";
             // 
             // label12
             // 
+            this.label12.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(907, 149);
+            this.label12.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(924, 178);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(51, 16);
+            this.label12.Size = new System.Drawing.Size(220, 46);
             this.label12.TabIndex = 11;
-            this.label12.Text = "label12";
+            this.label12.Text = "15/05/24 - 11h, 12h,13h\r\n17/05/24 - 11h30, 12h";
             // 
             // label13
             // 
+            this.label13.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(3, 253);
+            this.label13.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(55, 292);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(51, 16);
+            this.label13.Size = new System.Drawing.Size(74, 24);
             this.label13.TabIndex = 12;
-            this.label13.Text = "label13";
+            this.label13.Text = "Centro";
             // 
             // label14
             // 
+            this.label14.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(182, 253);
+            this.label14.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(222, 281);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(51, 16);
+            this.label14.Size = new System.Drawing.Size(263, 46);
             this.label14.TabIndex = 13;
-            this.label14.Text = "label14";
+            this.label14.Text = "Mario Candido CRP: 323640\r\n João Agustos CRP: 292541\r\n";
             // 
             // label15
             // 
+            this.label15.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(513, 253);
+            this.label15.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(541, 266);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(51, 16);
+            this.label15.Size = new System.Drawing.Size(347, 76);
             this.label15.TabIndex = 14;
-            this.label15.Text = "label15";
+            this.label15.Text = "   Rua Libero Badaro 232 - Sala 2 - (11) 972069879\r\nRua Barão de Paranapiacaba - " +
+    "Sala 22 - (11) 972863998";
             // 
             // label16
             // 
+            this.label16.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(907, 253);
+            this.label16.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(932, 281);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(51, 16);
+            this.label16.Size = new System.Drawing.Size(204, 46);
             this.label16.TabIndex = 15;
-            this.label16.Text = "label16";
+            this.label16.Text = "12/05/24 - 8h, 9h, 11h\r\n  14/05/24 - 9h, 15h";
             // 
             // label17
             // 
+            this.label17.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(3, 355);
+            this.label17.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Location = new System.Drawing.Point(61, 397);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(51, 16);
+            this.label17.Size = new System.Drawing.Size(62, 24);
             this.label17.TabIndex = 16;
-            this.label17.Text = "label17";
+            this.label17.Text = "Leste";
             // 
             // label18
             // 
+            this.label18.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(182, 355);
+            this.label18.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.Location = new System.Drawing.Point(212, 386);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(51, 16);
+            this.label18.Size = new System.Drawing.Size(284, 46);
             this.label18.TabIndex = 17;
-            this.label18.Text = "label18";
+            this.label18.Text = "Laura Fernandes CRP: 813675\r\n  Mayra Freitas CRP: 805020";
             // 
             // label19
             // 
+            this.label19.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(513, 355);
+            this.label19.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.Location = new System.Drawing.Point(536, 380);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(51, 16);
+            this.label19.Size = new System.Drawing.Size(356, 57);
             this.label19.TabIndex = 18;
-            this.label19.Text = "label19";
+            this.label19.Text = "     Avenida Sapopemba, 870 - (11) 982352227 \r\nAvenida Anhaia Mello, 47 - Sala 8 " +
+    "- (11) 972569870";
             // 
             // label20
             // 
+            this.label20.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(907, 355);
+            this.label20.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.Location = new System.Drawing.Point(942, 386);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(51, 16);
+            this.label20.Size = new System.Drawing.Size(183, 46);
             this.label20.TabIndex = 19;
-            this.label20.Text = "label20";
+            this.label20.Text = "25/05/24 - 10h, 13h\r\n27/05/24 - 11h, 12h";
             // 
             // label21
             // 
+            this.label21.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(3, 463);
+            this.label21.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.Location = new System.Drawing.Point(59, 513);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(51, 16);
+            this.label21.Size = new System.Drawing.Size(66, 24);
             this.label21.TabIndex = 20;
-            this.label21.Text = "label21";
+            this.label21.Text = "Oeste";
             // 
             // label22
             // 
+            this.label22.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(182, 463);
+            this.label22.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.Location = new System.Drawing.Point(212, 502);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(51, 16);
+            this.label22.Size = new System.Drawing.Size(284, 46);
             this.label22.TabIndex = 21;
-            this.label22.Text = "label22";
+            this.label22.Text = "Klaudia Menezas CRP: 384957\r\n   Julio Souza CRP: 454681";
             // 
             // label23
             // 
+            this.label23.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(513, 463);
+            this.label23.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.Location = new System.Drawing.Point(532, 496);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(51, 16);
+            this.label23.Size = new System.Drawing.Size(364, 57);
             this.label23.TabIndex = 22;
-            this.label23.Text = "label23";
+            this.label23.Text = "    Rua dos Pinheiros, 17 - (11) 9 32526879\r\nAvenida Brigadeiro Faria Lima, 1870 " +
+    "- Sala 15 - (11) 985524178";
             // 
             // label24
             // 
+            this.label24.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(907, 463);
+            this.label24.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.Location = new System.Drawing.Point(920, 502);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(51, 16);
+            this.label24.Size = new System.Drawing.Size(227, 46);
             this.label24.TabIndex = 23;
-            this.label24.Text = "label24";
+            this.label24.Text = "  22/05/24 - 10h, 19h\r\n24/05/24 - 15h, 16h, 17h";
             // 
             // TelaMarcarTerapia
             // 
