@@ -18,7 +18,7 @@ namespace Telalogin
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new AgendarConsulta());
+            Application.Run(new PedidoMedico());
         }
     }
 }
