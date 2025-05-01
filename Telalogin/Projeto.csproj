@@ -139,6 +139,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="view\PedidoMedico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\PedidoMedico.Designer.cs">
+      <DependentUpon>PedidoMedico.cs</DependentUpon>
+    </Compile>
     <Compile Include="view\TelaCadastro.cs">
       <SubType>Form</SubType>
     </Compile>
