@@ -18,7 +18,7 @@ namespace Telalogin
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new PedidoMedico());
+            Application.Run(new TelaMarcarTerapia());
         }
     }
 }
