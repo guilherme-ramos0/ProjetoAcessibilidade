@@ -124,6 +124,12 @@
     <Compile Include="view\AgendarConsulta.Designer.cs">
       <DependentUpon>AgendarConsulta.cs</DependentUpon>
     </Compile>
+    <Compile Include="view\ConsultasAgendadas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\ConsultasAgendadas.Designer.cs">
+      <DependentUpon>ConsultasAgendadas.cs</DependentUpon>
+    </Compile>
     <Compile Include="view\desings\BordaRedonda.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -134,6 +140,9 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="view\desings\PlaceholderHelper.cs" />
+    <Compile Include="view\desings\TransparentTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="view\loginUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -174,6 +183,9 @@
     </Compile>
     <EmbeddedResource Include="view\AgendarConsulta.resx">
       <DependentUpon>AgendarConsulta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\ConsultasAgendadas.resx">
+      <DependentUpon>ConsultasAgendadas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="view\loginUsuario.resx">
       <DependentUpon>loginUsuario.cs</DependentUpon>
