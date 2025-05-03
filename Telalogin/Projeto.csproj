@@ -140,9 +140,6 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="view\desings\PlaceholderHelper.cs" />
-    <Compile Include="view\desings\TransparentTextBox.cs">
-      <SubType>Component</SubType>
-    </Compile>
     <Compile Include="view\loginUsuario.cs">
       <SubType>Form</SubType>
     </Compile>

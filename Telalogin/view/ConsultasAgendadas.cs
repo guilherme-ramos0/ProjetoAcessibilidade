@@ -16,5 +16,11 @@ namespace Telalogin.view
         {
             InitializeComponent();
         }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            dataGridView1.RowHeadersVisible = false; // Oculta números das linhas
+            dataGridView1.BackgroundColor = Color.White; // Cor de fundo
+        }
     }
 }
