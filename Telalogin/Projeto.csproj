@@ -13,6 +13,7 @@
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
     <TargetFrameworkProfile />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -25,7 +26,6 @@
     <MapFileExtensions>true</MapFileExtensions>
     <ApplicationRevision>0</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
@@ -37,7 +37,7 @@
     <OutputPath>bin\Debug\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
+    <WarningLevel>5</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -47,6 +47,9 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>saude-publica.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="BouncyCastle.Cryptography, Version=2.0.0.0, Culture=neutral, PublicKeyToken=072edcf4a5328938, processorArchitecture=MSIL">
@@ -115,19 +118,28 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="model\tabelas.cs" />
+    <Compile Include="view\AgendarConsulta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\AgendarConsulta.Designer.cs">
+      <DependentUpon>AgendarConsulta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\ConsultasAgendadas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\ConsultasAgendadas.Designer.cs">
+      <DependentUpon>ConsultasAgendadas.cs</DependentUpon>
+    </Compile>
     <Compile Include="view\desings\BordaRedonda.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="view\desings\BorderedTableLayoutPanel.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="view\desings\BotaoBordaArredondada.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="view\desings\PlaceholderHelper.cs" />
-    <Compile Include="view\Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="view\Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
     <Compile Include="view\loginUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -136,11 +148,23 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="view\PedidoMedico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\PedidoMedico.Designer.cs">
+      <DependentUpon>PedidoMedico.cs</DependentUpon>
+    </Compile>
     <Compile Include="view\TelaCadastro.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="view\TelaCadastro.Designer.cs">
       <DependentUpon>TelaCadastro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\TelaMarcarTerapia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\TelaMarcarTerapia.Designer.cs">
+      <DependentUpon>TelaMarcarTerapia.cs</DependentUpon>
     </Compile>
     <Compile Include="view\TelaPrincipal.cs">
       <SubType>Form</SubType>
@@ -148,8 +172,17 @@
     <Compile Include="view\TelaPrincipal.Designer.cs">
       <DependentUpon>TelaPrincipal.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="view\Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="view\TelaSolicitação.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\TelaSolicitação.Designer.cs">
+      <DependentUpon>TelaSolicitação.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="view\AgendarConsulta.resx">
+      <DependentUpon>AgendarConsulta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\ConsultasAgendadas.resx">
+      <DependentUpon>ConsultasAgendadas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="view\loginUsuario.resx">
       <DependentUpon>loginUsuario.cs</DependentUpon>
@@ -164,11 +197,20 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="view\PedidoMedico.resx">
+      <DependentUpon>PedidoMedico.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="view\TelaCadastro.resx">
       <DependentUpon>TelaCadastro.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="view\TelaMarcarTerapia.resx">
+      <DependentUpon>TelaMarcarTerapia.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="view\TelaPrincipal.resx">
       <DependentUpon>TelaPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\TelaSolicitação.resx">
+      <DependentUpon>TelaSolicitação.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -198,6 +240,9 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="saude-publica.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
