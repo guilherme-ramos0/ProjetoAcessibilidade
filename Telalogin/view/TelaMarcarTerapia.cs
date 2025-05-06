@@ -30,7 +30,7 @@ namespace Telalogin.view
             using (Pen linePen = new Pen(Color.Blue, 1)) // Cor única: Azul
             {
                 // Configurações da caneta para a BORDA EXTERNA (mais grossa)
-                using (Pen borderPen = new Pen(Color.Blue, 5)) // Espessura 3 (borda externa)
+                using (Pen borderPen = new Pen(Color.Blue, 5)) // Espessura 5 (borda externa)
                 {
                     // Desenha a borda externa (mais grossa)
                     e.Graphics.DrawRectangle(borderPen, 0, 0, panel.Width - 1, panel.Height - 1);

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ProjetoAcessibilidade.view;
 
 namespace Telalogin.view
 {
@@ -15,6 +16,13 @@ namespace Telalogin.view
         public TelaPrincipal()
         {
             InitializeComponent();
+        }
+
+        private void btnAgendarCons_Click(object sender, EventArgs e)
+        {
+            AgendarConsulta agendarConsulta = new AgendarConsulta();
+            agendarConsulta.Show();
+            this.Close();
         }
     }
 }
