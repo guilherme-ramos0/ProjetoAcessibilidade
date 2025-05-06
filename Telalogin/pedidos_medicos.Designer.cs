@@ -31,6 +31,11 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(pedidos_medicos));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
@@ -39,18 +44,13 @@
             this.label1 = new System.Windows.Forms.Label();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.label4 = new System.Windows.Forms.Label();
-            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.btnSolicitacaoMedica = new Telalogin.view.Bordas.BotaoBordaArrendondada();
-            this.btnConsultaAtestado = new Telalogin.view.Bordas.BotaoBordaArrendondada();
             this.botaoBordaArrendondada1 = new Telalogin.view.Bordas.BotaoBordaArrendondada();
+            this.btnConsultaAtestado = new Telalogin.view.Bordas.BotaoBordaArrendondada();
+            this.btnSolicitacaoMedica = new Telalogin.view.Bordas.BotaoBordaArrendondada();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
-            this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
+            this.tableLayoutPanel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -86,6 +86,89 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1380, 704);
             this.panel1.TabIndex = 0;
+            // 
+            // tableLayoutPanel3
+            // 
+            this.tableLayoutPanel3.BackColor = System.Drawing.Color.AliceBlue;
+            this.tableLayoutPanel3.ColumnCount = 4;
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 66.57019F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.42981F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 241F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 161F));
+            this.tableLayoutPanel3.Controls.Add(this.label8, 3, 0);
+            this.tableLayoutPanel3.Controls.Add(this.label7, 2, 0);
+            this.tableLayoutPanel3.Controls.Add(this.label6, 1, 0);
+            this.tableLayoutPanel3.Controls.Add(this.label5, 0, 0);
+            this.tableLayoutPanel3.GrowStyle = System.Windows.Forms.TableLayoutPanelGrowStyle.FixedSize;
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(93, 141);
+            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
+            this.tableLayoutPanel3.RowCount = 15;
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 28F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 28F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 28F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 28F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 28F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 28F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 28F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 28F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 28F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 28F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 28F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 28F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 28F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 28F));
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(1128, 438);
+            this.tableLayoutPanel3.TabIndex = 12;
+            // 
+            // label8
+            // 
+            this.label8.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label8.BackColor = System.Drawing.Color.DodgerBlue;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.AliceBlue;
+            this.label8.Location = new System.Drawing.Point(975, 9);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(143, 21);
+            this.label8.TabIndex = 3;
+            this.label8.Text = "         Data";
+            // 
+            // label7
+            // 
+            this.label7.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label7.BackColor = System.Drawing.Color.DodgerBlue;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.AliceBlue;
+            this.label7.Location = new System.Drawing.Point(733, 9);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(224, 21);
+            this.label7.TabIndex = 2;
+            this.label7.Text = "           Procedimento";
+            // 
+            // label6
+            // 
+            this.label6.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label6.BackColor = System.Drawing.Color.DodgerBlue;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.AliceBlue;
+            this.label6.Location = new System.Drawing.Point(491, 9);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(225, 21);
+            this.label6.TabIndex = 1;
+            this.label6.Text = "          Medicamentos";
+            // 
+            // label5
+            // 
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label5.BackColor = System.Drawing.Color.DodgerBlue;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.AliceBlue;
+            this.label5.Location = new System.Drawing.Point(26, 9);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(431, 21);
+            this.label5.TabIndex = 0;
+            this.label5.Text = "                             Nome do Médico";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // textBox3
             // 
@@ -183,102 +266,19 @@
             this.label4.TabIndex = 0;
             this.label4.Text = "label4";
             // 
-            // tableLayoutPanel3
+            // botaoBordaArrendondada1
             // 
-            this.tableLayoutPanel3.BackColor = System.Drawing.Color.AliceBlue;
-            this.tableLayoutPanel3.ColumnCount = 4;
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 66.57019F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.42981F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 241F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 159F));
-            this.tableLayoutPanel3.Controls.Add(this.label8, 3, 0);
-            this.tableLayoutPanel3.Controls.Add(this.label7, 2, 0);
-            this.tableLayoutPanel3.Controls.Add(this.label6, 1, 0);
-            this.tableLayoutPanel3.Controls.Add(this.label5, 0, 0);
-            this.tableLayoutPanel3.GrowStyle = System.Windows.Forms.TableLayoutPanelGrowStyle.FixedSize;
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(93, 141);
-            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
-            this.tableLayoutPanel3.RowCount = 15;
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 28F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 28F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 28F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 28F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 28F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 28F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 28F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 28F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 28F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 28F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 28F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 28F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 28F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 28F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(1128, 438);
-            this.tableLayoutPanel3.TabIndex = 12;
-            // 
-            // label5
-            // 
-            this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label5.BackColor = System.Drawing.Color.DodgerBlue;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.AliceBlue;
-            this.label5.Location = new System.Drawing.Point(26, 9);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(431, 21);
-            this.label5.TabIndex = 0;
-            this.label5.Text = "                             Nome do Médico";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
-            // 
-            // label6
-            // 
-            this.label6.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label6.BackColor = System.Drawing.Color.DodgerBlue;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.AliceBlue;
-            this.label6.Location = new System.Drawing.Point(493, 9);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(225, 21);
-            this.label6.TabIndex = 1;
-            this.label6.Text = "          Medicamentos";
-            // 
-            // label7
-            // 
-            this.label7.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label7.BackColor = System.Drawing.Color.DodgerBlue;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.AliceBlue;
-            this.label7.Location = new System.Drawing.Point(735, 9);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(224, 21);
-            this.label7.TabIndex = 2;
-            this.label7.Text = "           Procedimento";
-            // 
-            // label8
-            // 
-            this.label8.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label8.BackColor = System.Drawing.Color.DodgerBlue;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.AliceBlue;
-            this.label8.Location = new System.Drawing.Point(976, 9);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(143, 21);
-            this.label8.TabIndex = 3;
-            this.label8.Text = "         Data";
-            // 
-            // btnSolicitacaoMedica
-            // 
-            this.btnSolicitacaoMedica.BackColor = System.Drawing.Color.DodgerBlue;
-            this.btnSolicitacaoMedica.CornerRadius = 20;
-            this.btnSolicitacaoMedica.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnSolicitacaoMedica.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSolicitacaoMedica.ForeColor = System.Drawing.Color.AliceBlue;
-            this.btnSolicitacaoMedica.Location = new System.Drawing.Point(230, 612);
-            this.btnSolicitacaoMedica.Name = "btnSolicitacaoMedica";
-            this.btnSolicitacaoMedica.Size = new System.Drawing.Size(288, 52);
-            this.btnSolicitacaoMedica.TabIndex = 13;
-            this.btnSolicitacaoMedica.Text = "Consultar Solicitações Médicas";
-            this.btnSolicitacaoMedica.UseVisualStyleBackColor = false;
+            this.botaoBordaArrendondada1.BackColor = System.Drawing.Color.DodgerBlue;
+            this.botaoBordaArrendondada1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("botaoBordaArrendondada1.BackgroundImage")));
+            this.botaoBordaArrendondada1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.botaoBordaArrendondada1.CornerRadius = 20;
+            this.botaoBordaArrendondada1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.botaoBordaArrendondada1.Location = new System.Drawing.Point(51, 598);
+            this.botaoBordaArrendondada1.Name = "botaoBordaArrendondada1";
+            this.botaoBordaArrendondada1.Size = new System.Drawing.Size(102, 86);
+            this.botaoBordaArrendondada1.TabIndex = 15;
+            this.botaoBordaArrendondada1.UseVisualStyleBackColor = false;
+            this.botaoBordaArrendondada1.Click += new System.EventHandler(this.botaoBordaArrendondada1_Click);
             // 
             // btnConsultaAtestado
             // 
@@ -294,19 +294,19 @@
             this.btnConsultaAtestado.Text = "Consultar Atestados";
             this.btnConsultaAtestado.UseVisualStyleBackColor = false;
             // 
-            // botaoBordaArrendondada1
+            // btnSolicitacaoMedica
             // 
-            this.botaoBordaArrendondada1.BackColor = System.Drawing.Color.DodgerBlue;
-            this.botaoBordaArrendondada1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("botaoBordaArrendondada1.BackgroundImage")));
-            this.botaoBordaArrendondada1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.botaoBordaArrendondada1.CornerRadius = 20;
-            this.botaoBordaArrendondada1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.botaoBordaArrendondada1.Location = new System.Drawing.Point(51, 598);
-            this.botaoBordaArrendondada1.Name = "botaoBordaArrendondada1";
-            this.botaoBordaArrendondada1.Size = new System.Drawing.Size(102, 86);
-            this.botaoBordaArrendondada1.TabIndex = 15;
-            this.botaoBordaArrendondada1.UseVisualStyleBackColor = false;
-            this.botaoBordaArrendondada1.Click += new System.EventHandler(this.botaoBordaArrendondada1_Click);
+            this.btnSolicitacaoMedica.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnSolicitacaoMedica.CornerRadius = 20;
+            this.btnSolicitacaoMedica.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnSolicitacaoMedica.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSolicitacaoMedica.ForeColor = System.Drawing.Color.AliceBlue;
+            this.btnSolicitacaoMedica.Location = new System.Drawing.Point(230, 612);
+            this.btnSolicitacaoMedica.Name = "btnSolicitacaoMedica";
+            this.btnSolicitacaoMedica.Size = new System.Drawing.Size(288, 52);
+            this.btnSolicitacaoMedica.TabIndex = 13;
+            this.btnSolicitacaoMedica.Text = "Consultar Solicitações Médicas";
+            this.btnSolicitacaoMedica.UseVisualStyleBackColor = false;
             // 
             // pedidos_medicos
             // 
@@ -319,9 +319,9 @@
             this.tableLayoutPanel1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
-            this.tableLayoutPanel3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
