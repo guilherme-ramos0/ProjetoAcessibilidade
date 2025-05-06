@@ -118,18 +118,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="model\tabelas.cs" />
-    <Compile Include="view\AgendarConsulta.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="view\AgendarConsulta.Designer.cs">
-      <DependentUpon>AgendarConsulta.cs</DependentUpon>
-    </Compile>
-    <Compile Include="view\ConsultasAgendadas.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="view\ConsultasAgendadas.Designer.cs">
-      <DependentUpon>ConsultasAgendadas.cs</DependentUpon>
-    </Compile>
     <Compile Include="view\desings\BordaRedonda.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -148,12 +136,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="view\PedidoMedico.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="view\PedidoMedico.Designer.cs">
-      <DependentUpon>PedidoMedico.cs</DependentUpon>
-    </Compile>
     <Compile Include="view\TelaCadastro.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -172,18 +154,6 @@
     <Compile Include="view\TelaPrincipal.Designer.cs">
       <DependentUpon>TelaPrincipal.cs</DependentUpon>
     </Compile>
-    <Compile Include="view\TelaSolicitação.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="view\TelaSolicitação.Designer.cs">
-      <DependentUpon>TelaSolicitação.cs</DependentUpon>
-    </Compile>
-    <EmbeddedResource Include="view\AgendarConsulta.resx">
-      <DependentUpon>AgendarConsulta.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="view\ConsultasAgendadas.resx">
-      <DependentUpon>ConsultasAgendadas.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="view\loginUsuario.resx">
       <DependentUpon>loginUsuario.cs</DependentUpon>
     </EmbeddedResource>
@@ -197,9 +167,6 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="view\PedidoMedico.resx">
-      <DependentUpon>PedidoMedico.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="view\TelaCadastro.resx">
       <DependentUpon>TelaCadastro.cs</DependentUpon>
     </EmbeddedResource>
@@ -208,9 +175,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="view\TelaPrincipal.resx">
       <DependentUpon>TelaPrincipal.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="view\TelaSolicitação.resx">
-      <DependentUpon>TelaSolicitação.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
