@@ -1,8 +1,8 @@
 ﻿using Acessibilidade.DAL;
 using Acessibilidade.Models;
+using Acessibilidade.Utils;
 using MySql.Data.MySqlClient;
 using System;
-using System.Collections.Generic;
 
 namespace Acessibilidade.Controllers
 {
@@ -10,9 +10,14 @@ namespace Acessibilidade.Controllers
     {
         public bool CadastrarUsuario(Cadastro usuario)
         {
+            if (!ValidarUsuario(usuario))
+                return false;
 
             try
             {
+                // Criptografa a senha antes de armazenar
+                usuario.Senha = CriptografiaUtil.CriptografarSenha(usuario.Senha);
+
                 using (MySqlConnection conn = DbConnection.GetConnection())
                 {
                     conn.Open();
@@ -35,8 +40,7 @@ namespace Acessibilidade.Controllers
             }
             catch (Exception ex)
             {
-                // Logar erro
-                
+                Console.WriteLine($"Erro ao cadastrar usuário: {ex.Message}");
                 return false;
             }
         }
@@ -74,6 +78,28 @@ namespace Acessibilidade.Controllers
             }
 
             return usuario;
+        }
+
+        public bool ValidarLogin(string cpf, string senhaDigitada)
+        {
+            var usuario = BuscarPorCpf(cpf);
+
+            if (usuario == null)
+            {
+                // Simular tempo de verificação para evitar timing attacks
+                CriptografiaUtil.CriptografarSenha("senha_invalida");
+                return false;
+            }
+
+            return CriptografiaUtil.VerificarSenha(senhaDigitada, usuario.Senha);
+        }
+
+        private bool ValidarUsuario(Cadastro usuario)
+        {
+            // Implemente suas validações aqui
+            return !string.IsNullOrEmpty(usuario.NomeCompleto) &&
+                   !string.IsNullOrEmpty(usuario.Cpf) &&
+                   !string.IsNullOrEmpty(usuario.Senha);
         }
     }
 }

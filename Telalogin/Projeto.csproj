@@ -118,6 +118,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="controller\CadastroController.cs" />
+    <Compile Include="controller\CriptografiaUtil.cs" />
     <Compile Include="controller\ZonaController.cs" />
     <Compile Include="model\entidades\Cadastro.cs" />
     <Compile Include="model\entidades\Consulta.cs" />
