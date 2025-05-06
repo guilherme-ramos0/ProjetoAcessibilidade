@@ -117,7 +117,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="model\tabelas.cs" />
+    <Compile Include="controller\CadastroController.cs" />
+    <Compile Include="controller\ZonaController.cs" />
+    <Compile Include="model\entidades\Cadastro.cs" />
+    <Compile Include="model\entidades\Consulta.cs" />
+    <Compile Include="model\DbConnection.cs" />
+    <Compile Include="model\entidades\Posto.cs" />
+    <Compile Include="model\entidades\Zona.cs" />
     <Compile Include="view\AgendarConsulta.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -226,9 +232,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="controller\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.8">
       <Visible>False</Visible>
