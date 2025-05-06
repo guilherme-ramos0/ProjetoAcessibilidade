@@ -10,6 +10,7 @@ namespace Acessibilidade.Controllers
     {
         public bool CadastrarUsuario(Cadastro usuario)
         {
+
             try
             {
                 using (MySqlConnection conn = DbConnection.GetConnection())

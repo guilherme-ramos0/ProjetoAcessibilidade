@@ -32,6 +32,10 @@
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.bordaredonda1 = new Bordaredonda();
             this.bordaredonda2 = new Bordaredonda();
+            this.cmbZona = new System.Windows.Forms.ComboBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.dtpNascimento = new System.Windows.Forms.MaskedTextBox();
+            this.txtTelefone = new System.Windows.Forms.MaskedTextBox();
             this.chkMostrarSenha = new System.Windows.Forms.CheckBox();
             this.botaoBordaArredondada2 = new BotaoBordaArredondada();
             this.botaoBordaArredondada1 = new BotaoBordaArredondada();
@@ -45,10 +49,7 @@
             this.txtNomeCompleto = new System.Windows.Forms.TextBox();
             this.txtCpf = new System.Windows.Forms.MaskedTextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtTelefone = new System.Windows.Forms.MaskedTextBox();
-            this.dtpNascimento = new System.Windows.Forms.MaskedTextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.cmbZona = new System.Windows.Forms.ComboBox();
+            this.label8 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             this.bordaredonda1.SuspendLayout();
             this.bordaredonda2.SuspendLayout();
@@ -76,15 +77,16 @@
             this.bordaredonda1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(74)))), ((int)(((byte)(173)))));
             this.bordaredonda1.Controls.Add(this.bordaredonda2);
             this.bordaredonda1.CornerRadius = 80;
-            this.bordaredonda1.Location = new System.Drawing.Point(332, 33);
+            this.bordaredonda1.Location = new System.Drawing.Point(308, 21);
             this.bordaredonda1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bordaredonda1.Name = "bordaredonda1";
-            this.bordaredonda1.Size = new System.Drawing.Size(491, 580);
+            this.bordaredonda1.Size = new System.Drawing.Size(539, 603);
             this.bordaredonda1.TabIndex = 0;
             // 
             // bordaredonda2
             // 
             this.bordaredonda2.BackColor = System.Drawing.Color.White;
+            this.bordaredonda2.Controls.Add(this.label8);
             this.bordaredonda2.Controls.Add(this.cmbZona);
             this.bordaredonda2.Controls.Add(this.label7);
             this.bordaredonda2.Controls.Add(this.dtpNascimento);
@@ -103,18 +105,54 @@
             this.bordaredonda2.Controls.Add(this.txtCpf);
             this.bordaredonda2.Controls.Add(this.label1);
             this.bordaredonda2.CornerRadius = 80;
-            this.bordaredonda2.Location = new System.Drawing.Point(35, 26);
+            this.bordaredonda2.Location = new System.Drawing.Point(29, 21);
             this.bordaredonda2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bordaredonda2.Name = "bordaredonda2";
-            this.bordaredonda2.Size = new System.Drawing.Size(419, 519);
+            this.bordaredonda2.Size = new System.Drawing.Size(484, 562);
             this.bordaredonda2.TabIndex = 0;
+            // 
+            // cmbZona
+            // 
+            this.cmbZona.FormattingEnabled = true;
+            this.cmbZona.Location = new System.Drawing.Point(119, 353);
+            this.cmbZona.Name = "cmbZona";
+            this.cmbZona.Size = new System.Drawing.Size(121, 24);
+            this.cmbZona.TabIndex = 17;
+            this.cmbZona.SelectedIndexChanged += new System.EventHandler(this.cmbZona_SelectedIndexChanged);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Arial", 12F);
+            this.label7.Location = new System.Drawing.Point(115, 264);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(188, 23);
+            this.label7.TabIndex = 16;
+            this.label7.Text = "Data de Nascimento";
+            // 
+            // dtpNascimento
+            // 
+            this.dtpNascimento.Location = new System.Drawing.Point(119, 290);
+            this.dtpNascimento.Mask = "00/00/0000";
+            this.dtpNascimento.Name = "dtpNascimento";
+            this.dtpNascimento.Size = new System.Drawing.Size(235, 22);
+            this.dtpNascimento.TabIndex = 15;
+            this.dtpNascimento.ValidatingType = typeof(System.DateTime);
+            // 
+            // txtTelefone
+            // 
+            this.txtTelefone.Location = new System.Drawing.Point(119, 218);
+            this.txtTelefone.Mask = "(99) 000-000000";
+            this.txtTelefone.Name = "txtTelefone";
+            this.txtTelefone.Size = new System.Drawing.Size(235, 22);
+            this.txtTelefone.TabIndex = 14;
             // 
             // chkMostrarSenha
             // 
             this.chkMostrarSenha.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.chkMostrarSenha.BackColor = System.Drawing.Color.Transparent;
             this.chkMostrarSenha.CheckAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.chkMostrarSenha.Location = new System.Drawing.Point(324, 354);
+            this.chkMostrarSenha.Location = new System.Drawing.Point(359, 401);
             this.chkMostrarSenha.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chkMostrarSenha.Name = "chkMostrarSenha";
             this.chkMostrarSenha.Size = new System.Drawing.Size(72, 57);
@@ -132,7 +170,7 @@
             this.botaoBordaArredondada2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.botaoBordaArredondada2.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.botaoBordaArredondada2.ForeColor = System.Drawing.Color.White;
-            this.botaoBordaArredondada2.Location = new System.Drawing.Point(81, 463);
+            this.botaoBordaArredondada2.Location = new System.Drawing.Point(116, 510);
             this.botaoBordaArredondada2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.botaoBordaArredondada2.Name = "botaoBordaArredondada2";
             this.botaoBordaArredondada2.Size = new System.Drawing.Size(97, 37);
@@ -149,7 +187,7 @@
             this.botaoBordaArredondada1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.botaoBordaArredondada1.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.botaoBordaArredondada1.ForeColor = System.Drawing.Color.White;
-            this.botaoBordaArredondada1.Location = new System.Drawing.Point(220, 463);
+            this.botaoBordaArredondada1.Location = new System.Drawing.Point(255, 510);
             this.botaoBordaArredondada1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.botaoBordaArredondada1.Name = "botaoBordaArredondada1";
             this.botaoBordaArredondada1.Size = new System.Drawing.Size(116, 37);
@@ -162,7 +200,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(77, 58);
+            this.label6.Location = new System.Drawing.Point(113, 60);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(151, 23);
             this.label6.TabIndex = 10;
@@ -172,7 +210,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(77, 122);
+            this.label5.Location = new System.Drawing.Point(113, 124);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(49, 23);
             this.label5.TabIndex = 9;
@@ -182,7 +220,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(79, 189);
+            this.label4.Location = new System.Drawing.Point(115, 191);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(84, 23);
             this.label4.TabIndex = 8;
@@ -192,7 +230,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(79, 329);
+            this.label3.Location = new System.Drawing.Point(114, 376);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(65, 23);
             this.label3.TabIndex = 7;
@@ -202,7 +240,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(77, 399);
+            this.label2.Location = new System.Drawing.Point(112, 446);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(154, 23);
             this.label2.TabIndex = 6;
@@ -210,7 +248,7 @@
             // 
             // txtConfirmarSenha
             // 
-            this.txtConfirmarSenha.Location = new System.Drawing.Point(83, 425);
+            this.txtConfirmarSenha.Location = new System.Drawing.Point(118, 472);
             this.txtConfirmarSenha.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtConfirmarSenha.Name = "txtConfirmarSenha";
             this.txtConfirmarSenha.Size = new System.Drawing.Size(235, 22);
@@ -220,7 +258,7 @@
             // 
             // txtSenha
             // 
-            this.txtSenha.Location = new System.Drawing.Point(83, 354);
+            this.txtSenha.Location = new System.Drawing.Point(118, 401);
             this.txtSenha.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtSenha.Name = "txtSenha";
             this.txtSenha.Size = new System.Drawing.Size(235, 22);
@@ -230,7 +268,7 @@
             // 
             // txtNomeCompleto
             // 
-            this.txtNomeCompleto.Location = new System.Drawing.Point(83, 84);
+            this.txtNomeCompleto.Location = new System.Drawing.Point(119, 86);
             this.txtNomeCompleto.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtNomeCompleto.Name = "txtNomeCompleto";
             this.txtNomeCompleto.Size = new System.Drawing.Size(235, 22);
@@ -238,7 +276,7 @@
             // 
             // txtCpf
             // 
-            this.txtCpf.Location = new System.Drawing.Point(83, 148);
+            this.txtCpf.Location = new System.Drawing.Point(119, 150);
             this.txtCpf.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtCpf.Mask = "000,000,000-00";
             this.txtCpf.Name = "txtCpf";
@@ -249,46 +287,21 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(77, 11);
+            this.label1.Location = new System.Drawing.Point(113, 13);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(215, 27);
             this.label1.TabIndex = 0;
             this.label1.Text = "Faça seu cadastro";
             // 
-            // txtTelefone
+            // label8
             // 
-            this.txtTelefone.Location = new System.Drawing.Point(83, 216);
-            this.txtTelefone.Mask = "(99) 000-000000";
-            this.txtTelefone.Name = "txtTelefone";
-            this.txtTelefone.Size = new System.Drawing.Size(235, 22);
-            this.txtTelefone.TabIndex = 14;
-            // 
-            // dtpNascimento
-            // 
-            this.dtpNascimento.Location = new System.Drawing.Point(83, 288);
-            this.dtpNascimento.Mask = "00/00/0000";
-            this.dtpNascimento.Name = "dtpNascimento";
-            this.dtpNascimento.Size = new System.Drawing.Size(235, 22);
-            this.dtpNascimento.TabIndex = 15;
-            this.dtpNascimento.ValidatingType = typeof(System.DateTime);
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Arial", 12F);
-            this.label7.Location = new System.Drawing.Point(79, 262);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(188, 23);
-            this.label7.TabIndex = 16;
-            this.label7.Text = "Data de Nascimento";
-            // 
-            // cmbZona
-            // 
-            this.cmbZona.FormattingEnabled = true;
-            this.cmbZona.Location = new System.Drawing.Point(285, 244);
-            this.cmbZona.Name = "cmbZona";
-            this.cmbZona.Size = new System.Drawing.Size(121, 24);
-            this.cmbZona.TabIndex = 17;
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Arial", 12F);
+            this.label8.Location = new System.Drawing.Point(115, 327);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(253, 23);
+            this.label8.TabIndex = 18;
+            this.label8.Text = "Insira de qual regiao voce é";
             // 
             // TelaCadastro
             // 
@@ -333,5 +346,6 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.MaskedTextBox dtpNascimento;
         private System.Windows.Forms.ComboBox cmbZona;
+        private System.Windows.Forms.Label label8;
     }
 }

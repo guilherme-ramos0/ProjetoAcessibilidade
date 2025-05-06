@@ -281,6 +281,10 @@ namespace Telalogin.view
             return true;
         }
 
+        private void cmbZona_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 
