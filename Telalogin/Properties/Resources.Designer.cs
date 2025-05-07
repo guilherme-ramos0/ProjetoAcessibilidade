@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ProjetoAcessibilidade.Properties {
+namespace Telalogin.Properties {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace ProjetoAcessibilidade.Properties {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("ProjetoAcessibilidade.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Telalogin.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -126,6 +126,16 @@ namespace ProjetoAcessibilidade.Properties {
         internal static System.Drawing.Bitmap fundo_1__3_ {
             get {
                 object obj = ResourceManager.GetObject("fundo 1 (3)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap hospital {
+            get {
+                object obj = ResourceManager.GetObject("hospital", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -1,4 +1,4 @@
-﻿using ProjetoAcessibilidade.view;
+﻿//using ProjetoAcessibilidade.view;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,7 +18,7 @@ namespace Telalogin
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new TelaMarcarTerapia());
+            Application.Run(new TelaPrincipal());
         }
     }
 }

@@ -50,20 +50,7 @@ namespace Telalogin.view
                     x += panel.GetColumnWidths()[col];
                     e.Graphics.DrawLine(linePen, x, 0, x, panel.Height);
                 }
-            }
-            
-
-        }
-
-        private void TelaMarcarTerapia_Load(object sender, EventArgs e)
-        {
-            
-        }
-
-        
-
-        private void label4_Click(object sender, EventArgs e)
-        {
+            }      
 
         }
     }

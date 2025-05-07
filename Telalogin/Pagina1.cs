@@ -8,19 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Telalogin.view
+namespace Telalogin
 {
-    public partial class TelaPrincipal: Form
+    public partial class Pagina1: Form
     {
-        public TelaPrincipal()
+        public Pagina1()
         {
             InitializeComponent();
-        }
-
-        private void btnConsulta_Click(object sender, EventArgs e)
-        {
-            TelaMarcarTerapia pag1 = new TelaMarcarTerapia();
-            pag1.Show();
         }
     }
 }
