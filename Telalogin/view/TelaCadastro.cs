@@ -192,9 +192,6 @@ namespace Telalogin.view
                                 MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
-            TelaPrincipal principal = new TelaPrincipal();
-            principal.Show();
-            this.Hide();
         }
 
         private bool ValidarCampos()
