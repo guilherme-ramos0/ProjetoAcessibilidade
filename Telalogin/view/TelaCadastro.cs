@@ -130,9 +130,8 @@ namespace Telalogin.view
 
         private void botaoBordaArredondada2_Click(object sender, EventArgs e)
         {
-            loginUsuario loginUsuario = new loginUsuario();
+            Login loginUsuario = new Login();
             loginUsuario.Show();
-            this.Hide();
         }
 
         private void botaoBordaArredondada1_Click(object sender, EventArgs e)
@@ -191,7 +190,7 @@ namespace Telalogin.view
                 MessageBox.Show($"Erro durante o cadastro: {ex.Message}", "Erro",
                                 MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-
+            txtNomeCompleto.Focus();
         }
 
         private bool ValidarCampos()
@@ -282,6 +281,11 @@ namespace Telalogin.view
         }
 
         private void cmbZona_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtNomeCompleto_TextChanged(object sender, EventArgs e)
         {
 
         }

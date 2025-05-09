@@ -2,16 +2,12 @@
 using System.Security.Cryptography;
 using System.Text;
 
-namespace Acessibilidade.Utils
+namespace Acessibilidade.Helpers
 {
-    public static class CriptografiaUtil
+    public static class CryptoHelper
     {
-        // Salt deve ser único para cada aplicação (altere este valor)
-        private const string SALT_GLOBAL = "ACESSIBILIDADE_2024@SALT";
+        private const string SALT_GLOBAL = "SeuSaltGlobalForte@123"; // Altere para um salt secreto
 
-        /// <summary>
-        /// Criptografa uma senha usando SHA256 com salt
-        /// </summary>
         public static string CriptografarSenha(string senha)
         {
             if (string.IsNullOrEmpty(senha))
@@ -39,16 +35,13 @@ namespace Acessibilidade.Utils
             }
         }
 
-        /// <summary>
-        /// Verifica se a senha digitada corresponde ao hash armazenado
-        /// </summary>
         public static bool VerificarSenha(string senhaDigitada, string senhaCriptografada)
         {
-            if (string.IsNullOrEmpty(senhaDigitada))
+            if (string.IsNullOrEmpty(senhaDigitada) || string.IsNullOrEmpty(senhaCriptografada))
                 return false;
 
-            string hashDaSenhaDigitada = CriptografarSenha(senhaDigitada);
-            return hashDaSenhaDigitada.Equals(senhaCriptografada);
+            string hashDigitado = CriptografarSenha(senhaDigitada);
+            return hashDigitado.Equals(senhaCriptografada);
         }
     }
 }

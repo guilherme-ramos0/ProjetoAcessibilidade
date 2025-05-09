@@ -1,4 +1,8 @@
-﻿using System;
+﻿using Acessibilidade.Controllers;
+using Acessibilidade.Models;
+using Acessibilidade.Utils;
+using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,22 +11,89 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Acessibilidade.Controllers;
+using Acessibilidade.DAL;
 
 namespace Telalogin.view
 {
-    public partial class Login: Form
+    public partial class Login : Form
     {
-        private CadastroController cadastroController;
-
-
+        private readonly LoginController _loginController;
         public Login()
         {
             InitializeComponent();
-            cadastroController = new CadastroController();
-
-            mskCpf.ValidatingType = typeof(string);
+            Logger.RegistrarInfo("Aplicação iniciada", null, nameof(Login));
+            _loginController = new LoginController();
         }
+
+        
+
+        private void btnlogin_Click(object sender, EventArgs e)
+        {
+            string cpf = mskCpf.Text.Replace(".", "").Replace("-", "").Trim();
+
+            try
+            {
+                if (string.IsNullOrEmpty(cpf) || cpf.Length != 11)
+                {
+                    Logger.RegistrarAviso($"CPF inválido fornecido: {mskCpf.Text}", cpf, nameof(btnlogin_Click));
+                    MessageBox.Show("CPF inválido!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                var usuario = _loginController.ValidarLogin(cpf, txtSenha.Text);
+
+                if (usuario != null)
+                {
+                    // Login autorizado - mostra mensagem de sucesso
+                    MessageBox.Show("Login autorizado com sucesso!",
+                                  "Bem-vindo",
+                                  MessageBoxButtons.OK,
+                                  MessageBoxIcon.Information);
+
+                    // Fecha o formulário de login
+                    this.Hide();
+
+                    // Abre o formulário principal
+                    TelaPrincipal formPrincipal = new TelaPrincipal();
+                    formPrincipal.Show();
+                }
+                else
+                {
+                    Logger.RegistrarAviso("Tentativa de login falhou - Credenciais inválidas", cpf, nameof(btnlogin_Click));
+                    MessageBox.Show("CPF ou senha incorretos", "Erro de Login",
+                                  MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            catch (Exception ex)
+            {
+                Logger.RegistrarErro(ex, cpf, nameof(btnlogin_Click));
+                MessageBox.Show($"Falha técnica ao realizar login. Detalhes foram registrados.\n\nCódigo: {Guid.NewGuid()}",
+                              "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void txtCpf_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Permite apenas números e teclas de controle
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+        
+
+        
+        // Validação adicional enquanto digita o CPF
+        private void mskCpf_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Permite apenas números e teclas de controle (backspace, delete, etc)
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        } 
+       
+
 
         private void btnCadastrar_Click(object sender, EventArgs e)
         {
@@ -31,41 +102,11 @@ namespace Telalogin.view
             this.Hide();
         }
 
-        private void btnLogin_Click(object sender, EventArgs e)
+        private void mskCpf_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
         {
-            // Remover formatação do CPF
-            string cpf = mskCpf.Text.Replace(".", "").Replace("-", "").Trim();
-            string senha = txtSenha.Text;
 
-            // Validação básica
-            if (!mskCpf.MaskCompleted || string.IsNullOrEmpty(senha))
-            {
-                MessageBox.Show("CPF completo e senha são obrigatórios!", "Atenção",
-                              MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            }
-
-            // Validar estrutura do CPF (opcional)
-            if (!cadastroController.ValidarCPF(cpf))
-            {
-                MessageBox.Show("CPF inválido!", "Atenção",
-                              MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                mskCpf.Focus();
-                return;
-            }
-
-            if (cadastroController.ValidarLogin(cpf, senha))
-            {
-                MessageBox.Show("Login realizado com sucesso!", "Sucesso",
-                              MessageBoxButtons.OK, MessageBoxIcon.Information);
-                this.Hide();
-                new TelaPrincipal().Show();
-            }
-            else
-            {
-                MessageBox.Show("CPF ou senha incorretos!", "Erro",
-                              MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
         }
+
+        
     }
 }

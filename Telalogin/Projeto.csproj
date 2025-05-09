@@ -118,7 +118,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="controller\CadastroController.cs" />
-    <Compile Include="controller\CriptografiaUtil.cs" />
+    <Compile Include="controller\utils\CriptografiaUtil.cs" />
+    <Compile Include="controller\CryptoHelper.cs" />
+    <Compile Include="controller\LoginController.cs" />
+    <Compile Include="controller\utils\Logger.cs" />
     <Compile Include="controller\ZonaController.cs" />
     <Compile Include="model\entidades\Cadastro.cs" />
     <Compile Include="model\entidades\Consulta.cs" />
@@ -135,11 +138,11 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="view\desings\PlaceholderHelper.cs" />
-    <Compile Include="view\loginUsuario.cs">
+    <Compile Include="view\Login.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="view\loginUsuario.Designer.cs">
-      <DependentUpon>loginUsuario.cs</DependentUpon>
+    <Compile Include="view\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -161,8 +164,8 @@
     <Compile Include="view\TelaPrincipal.Designer.cs">
       <DependentUpon>TelaPrincipal.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="view\loginUsuario.resx">
-      <DependentUpon>loginUsuario.cs</DependentUpon>
+    <EmbeddedResource Include="view\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
