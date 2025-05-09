@@ -40,9 +40,9 @@ namespace Telalogin.view
                     return;
                 }
 
-                var usuario = _loginController.ValidarLogin(cpf, txtSenha.Text);
+                var usuarioAutenticado = _loginController.ValidarLogin(cpf, txtSenha.Text);
 
-                if (usuario != null)
+                if (usuarioAutenticado != null)
                 {
                     // Login autorizado - mostra mensagem de sucesso
                     MessageBox.Show("Login autorizado com sucesso!",
@@ -50,9 +50,9 @@ namespace Telalogin.view
                                   MessageBoxButtons.OK,
                                   MessageBoxIcon.Information);
 
-                    // Fecha o formulário de login
-                    this.Hide();
+                    SessionManager.UsuarioLogado = usuarioAutenticado;
 
+                    
                     // Abre o formulário principal
                     TelaPrincipal formPrincipal = new TelaPrincipal();
                     formPrincipal.Show();

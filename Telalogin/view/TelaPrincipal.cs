@@ -18,11 +18,7 @@ namespace Telalogin.view
             InitializeComponent();
         }
 
-        private void btnConsulta_Click(object sender, EventArgs e)
-        {
-            TelaMarcarTerapia pag1 = new TelaMarcarTerapia();
-            pag1.Show();
-        }
+        
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -32,7 +28,7 @@ namespace Telalogin.view
             Agendamento formAgendamento = new Agendamento(idUsuarioLogado);
 
             // Mostre o formulário
-            formAgendamento.ShowDialog();
+            formAgendamento.Show();
         }
     }
 }

@@ -66,11 +66,11 @@ namespace Telalogin.view
                 using (MySqlConnection conn = DbConnection.GetConnection())
                 {
                     conn.Open();
-                    string query = @"SELECT a.IdAgendamento, p.nome as Posto, 
+                    string query = @"SELECT a.IdAgendamentos, p.nome as Posto, 
                                     DATE_FORMAT(a.DataAgendamento, '%d/%m/%Y %H:%i') as DataFormatada,
                                     a.TipoServico, a.Status
                                     FROM Agendamentos a
-                                    JOIN Postos p ON a.IdPosto = p.idPostos
+                                    JOIN Postos p ON a.IdPostos = p.idPostos
                                     WHERE a.IdCadastro = @IdCadastro
                                     ORDER BY a.DataAgendamento DESC";
 
@@ -139,14 +139,14 @@ namespace Telalogin.view
                 {
                     conn.Open();
                     string query = @"INSERT INTO Agendamentos 
-                                     (IdCadastro, IdPosto, DataAgendamento, TipoServico, Observacoes)
+                                     (IdCadastro, IdPostos, DataAgendamento, TipoServico, Observacoes)
                                      VALUES
-                                     (@IdCadastro, @IdPosto, @DataAgendamento, @TipoServico, @Observacoes)";
+                                     (@IdCadastro, @IdPostos, @DataAgendamento, @TipoServico, @Observacoes)";
 
                     using (MySqlCommand cmd = new MySqlCommand(query, conn))
                     {
                         cmd.Parameters.AddWithValue("@IdCadastro", _idCadastro); // Corrigido
-                        cmd.Parameters.AddWithValue("@IdPosto", cboPosto.SelectedValue);
+                        cmd.Parameters.AddWithValue("@IdPostos", cboPosto.SelectedValue);
                         cmd.Parameters.AddWithValue("@DataAgendamento", dataAgendamento);
                         cmd.Parameters.AddWithValue("@TipoServico", txtServico.Text);
                         cmd.Parameters.AddWithValue("@Observacoes", txtObservacoes.Text);
