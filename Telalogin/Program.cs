@@ -30,7 +30,7 @@ namespace Telalogin
                 else
                 {
                     // Se o login foi cancelado, fecha a aplicação
-                    MessageBox.Show("Operação invalida, repita o login", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    Application.Exit();
                 }
             }
         }
