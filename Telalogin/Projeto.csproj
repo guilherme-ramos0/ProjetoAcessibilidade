@@ -124,6 +124,7 @@
     <Compile Include="controller\LoginController.cs" />
     <Compile Include="controller\utils\Logger.cs" />
     <Compile Include="controller\ZonaController.cs" />
+    <Compile Include="model\entidades\Agendamentos.cs" />
     <Compile Include="model\entidades\Cadastro.cs" />
     <Compile Include="model\entidades\Consulta.cs" />
     <Compile Include="model\DbConnection.cs" />

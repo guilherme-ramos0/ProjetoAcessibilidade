@@ -145,7 +145,7 @@ namespace Telalogin.view
 
                     using (MySqlCommand cmd = new MySqlCommand(query, conn))
                     {
-                        cmd.Parameters.AddWithValue("@IdCadastro", _idCadastro); // Corrigido
+                        cmd.Parameters.AddWithValue("@IdCadastro", _idCadastro);
                         cmd.Parameters.AddWithValue("@IdPostos", cboPosto.SelectedValue);
                         cmd.Parameters.AddWithValue("@DataAgendamento", dataAgendamento);
                         cmd.Parameters.AddWithValue("@TipoServico", txtServico.Text);

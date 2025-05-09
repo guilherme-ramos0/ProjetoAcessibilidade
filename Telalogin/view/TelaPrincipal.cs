@@ -21,7 +21,7 @@ namespace Telalogin.view
         public TelaPrincipal(int _idCadastro)
         {
             InitializeComponent();
-            _idCadastro = idCadastro;
+            idCadastro = _idCadastro;
             CarregarDadosUsuario();
             CarregarAgendamentosRecentes();
             ConfigurarGridAgendamentos();
@@ -39,6 +39,8 @@ namespace Telalogin.view
                 lblStatusAgendamentos.ForeColor = System.Drawing.Color.Green;
             }
         }
+
+
 
         private void CarregarDadosUsuario()
         {
@@ -84,16 +86,6 @@ namespace Telalogin.view
                 Width = 80
             });
 
-            // Botão de detalhes
-            DataGridViewButtonColumn btnDetalhes = new DataGridViewButtonColumn
-            {
-                Text = "Detalhes",
-                UseColumnTextForButtonValue = true,
-                HeaderText = "Ações",
-                Width = 80
-            };
-            dgvAgendamentos.Columns.Add(btnDetalhes);
-
         }
         private void CarregarAgendamentosRecentes()
         {
@@ -102,39 +94,38 @@ namespace Telalogin.view
                 using (MySqlConnection conn = DbConnection.GetConnection())
                 {
                     conn.Open();
-                    string query = @"SELECT 
-                            a.IdAgendamentos,
-                            p.nome as Postos, 
-                            DATE_FORMAT(a.DataAgendamento, '%d/%m/%Y %H:%i') as DataFormatada,
-                            a.TipoServico, 
-                            a.Status
-                            FROM Agendamentos a
-                            JOIN Postos p ON a.IdPostos = p.idPostos
-                            WHERE a.IdCadastro = @IdCadastro
-                            ORDER BY a.DataAgendamento DESC
-                            LIMIT 5";
+                    string query = @"SELECT nome, dataAgendamento, tipoServico, observacoes, zona  FROM agendamentos
+                            JOIN cadastro ON cadastro.idCadastro = agendamentos.idCadastro 
+                            JOIN postos ON postos.idPostos = agendamentos.idPostos 
+                            ";
 
-                    MySqlCommand cmd = new MySqlCommand(query, conn);
-                    cmd.Parameters.AddWithValue("@IdCadastro", idCadastro);
-
-                    // DEBUG: Verifique a query sendo executada
-                    Console.WriteLine("Executando query: " + cmd.CommandText);
-
-                    MySqlDataAdapter da = new MySqlDataAdapter(cmd);
-                    DataTable dt = new DataTable();
-                    da.Fill(dt);
-
-                    // DEBUG: Verifique quantas linhas retornaram
-                    Console.WriteLine($"Linhas retornadas: {dt.Rows.Count}");
-
-                    dgvAgendamentos.DataSource = dt;
-
-                    // Verifique se o DataSource foi atribuído corretamente
-                    if (dgvAgendamentos.DataSource == null)
+                    using (MySqlCommand cmd = new MySqlCommand(query, conn))
                     {
-                        MessageBox.Show("DataSource não foi atribuído ao DataGridView");
+                        cmd.Parameters.AddWithValue("@IdCadastro", idCadastro);
+
+                        DataTable dt = new DataTable();
+                        MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+                        da.Fill(dt);
+
+                        // Criar lista de objetos anônimos para bind
+                        var agendamentos = new List<dynamic>();
+                        foreach (DataRow row in dt.Rows)
+                        {
+                            agendamentos.Add(new
+                            {
+                                Id = row["idAgendamentos"],
+                                Posto = row["Posto"],
+                                DataFormatada = Convert.ToDateTime(row["dataAgendamento"]).ToString("dd/MM/yyyy HH:mm"),
+                                TipoServico = row["tipoServico"],
+                                Status = row["status"]
+                            });
+                        }
+
+                        dgvAgendamentos.DataSource = agendamentos;
                     }
                 }
+
+                VerificarAgendamentos();
             }
             catch (Exception ex)
             {
@@ -142,10 +133,9 @@ namespace Telalogin.view
                               MessageBoxButtons.OK, MessageBoxIcon.Error);
                 Logger.RegistrarErro(ex, idCadastro.ToString(), nameof(CarregarAgendamentosRecentes));
             }
-            VerificarAgendamentos();
         }
 
-       
+
 
         private string FormatarCpf(string cpf)
         {

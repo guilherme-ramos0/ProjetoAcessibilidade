@@ -33,13 +33,13 @@
             this.bordaredonda3 = new Bordaredonda();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.bordaredonda4 = new Bordaredonda();
+            this.btnCadastrar = new BotaoBordaArredondada();
+            this.btnlogin = new BotaoBordaArredondada();
+            this.txtSenha = new System.Windows.Forms.TextBox();
+            this.mskCpf = new System.Windows.Forms.MaskedTextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.mskCpf = new System.Windows.Forms.MaskedTextBox();
-            this.txtSenha = new System.Windows.Forms.TextBox();
-            this.btnlogin = new BotaoBordaArredondada();
-            this.btnCadastrar = new BotaoBordaArredondada();
             this.tableLayoutPanel1.SuspendLayout();
             this.bordaredonda3.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -55,11 +55,11 @@
             this.tableLayoutPanel1.Controls.Add(this.bordaredonda3, 0, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1028, 679);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(771, 552);
             this.tableLayoutPanel1.TabIndex = 1;
             // 
             // bordaredonda3
@@ -69,9 +69,10 @@
             this.bordaredonda3.Controls.Add(this.tableLayoutPanel2);
             this.bordaredonda3.CornerRadius = 80;
             this.bordaredonda3.ForeColor = System.Drawing.Color.White;
-            this.bordaredonda3.Location = new System.Drawing.Point(155, 70);
+            this.bordaredonda3.Location = new System.Drawing.Point(116, 57);
+            this.bordaredonda3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bordaredonda3.Name = "bordaredonda3";
-            this.bordaredonda3.Size = new System.Drawing.Size(717, 538);
+            this.bordaredonda3.Size = new System.Drawing.Size(538, 437);
             this.bordaredonda3.TabIndex = 0;
             // 
             // tableLayoutPanel2
@@ -82,11 +83,12 @@
             this.tableLayoutPanel2.Controls.Add(this.bordaredonda4, 0, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(717, 538);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(538, 437);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
             // bordaredonda4
@@ -101,77 +103,11 @@
             this.bordaredonda4.Controls.Add(this.label3);
             this.bordaredonda4.Controls.Add(this.label2);
             this.bordaredonda4.CornerRadius = 80;
-            this.bordaredonda4.Location = new System.Drawing.Point(34, 21);
+            this.bordaredonda4.Location = new System.Drawing.Point(25, 17);
+            this.bordaredonda4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bordaredonda4.Name = "bordaredonda4";
-            this.bordaredonda4.Size = new System.Drawing.Size(649, 495);
+            this.bordaredonda4.Size = new System.Drawing.Size(487, 402);
             this.bordaredonda4.TabIndex = 0;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(196, 251);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(95, 32);
-            this.label4.TabIndex = 2;
-            this.label4.Text = "Senha";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(196, 158);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(70, 32);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "CPF";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Arial", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(276, 48);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(106, 38);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Login";
-            // 
-            // mskCpf
-            // 
-            this.mskCpf.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mskCpf.Location = new System.Drawing.Point(202, 193);
-            this.mskCpf.Mask = "000,000,000-00";
-            this.mskCpf.Name = "mskCpf";
-            this.mskCpf.Size = new System.Drawing.Size(198, 34);
-            this.mskCpf.TabIndex = 3;
-            this.mskCpf.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.mskCpf_MaskInputRejected);
-            // 
-            // txtSenha
-            // 
-            this.txtSenha.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSenha.Location = new System.Drawing.Point(202, 286);
-            this.txtSenha.Name = "txtSenha";
-            this.txtSenha.Size = new System.Drawing.Size(198, 34);
-            this.txtSenha.TabIndex = 4;
-            // 
-            // btnlogin
-            // 
-            this.btnlogin.AutoSize = true;
-            this.btnlogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(74)))), ((int)(((byte)(173)))));
-            this.btnlogin.CornerRadius = 20;
-            this.btnlogin.FlatAppearance.BorderSize = 0;
-            this.btnlogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnlogin.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnlogin.Location = new System.Drawing.Point(115, 363);
-            this.btnlogin.Name = "btnlogin";
-            this.btnlogin.Size = new System.Drawing.Size(176, 38);
-            this.btnlogin.TabIndex = 5;
-            this.btnlogin.Text = "Realizar login";
-            this.btnlogin.UseVisualStyleBackColor = false;
-            this.btnlogin.Click += new System.EventHandler(this.btnlogin_Click);
             // 
             // btnCadastrar
             // 
@@ -181,21 +117,98 @@
             this.btnCadastrar.FlatAppearance.BorderSize = 0;
             this.btnCadastrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCadastrar.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCadastrar.Location = new System.Drawing.Point(331, 363);
+            this.btnCadastrar.Location = new System.Drawing.Point(248, 295);
+            this.btnCadastrar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnCadastrar.Name = "btnCadastrar";
-            this.btnCadastrar.Size = new System.Drawing.Size(176, 38);
+            this.btnCadastrar.Size = new System.Drawing.Size(132, 32);
             this.btnCadastrar.TabIndex = 6;
             this.btnCadastrar.Text = "Cadastrar";
             this.btnCadastrar.UseVisualStyleBackColor = false;
             this.btnCadastrar.Click += new System.EventHandler(this.btnCadastrar_Click);
             // 
+            // btnlogin
+            // 
+            this.btnlogin.AutoSize = true;
+            this.btnlogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(74)))), ((int)(((byte)(173)))));
+            this.btnlogin.CornerRadius = 20;
+            this.btnlogin.FlatAppearance.BorderSize = 0;
+            this.btnlogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnlogin.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnlogin.Location = new System.Drawing.Point(86, 295);
+            this.btnlogin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnlogin.Name = "btnlogin";
+            this.btnlogin.Size = new System.Drawing.Size(145, 32);
+            this.btnlogin.TabIndex = 5;
+            this.btnlogin.Text = "Realizar login";
+            this.btnlogin.UseVisualStyleBackColor = false;
+            this.btnlogin.Click += new System.EventHandler(this.btnlogin_Click);
+            // 
+            // txtSenha
+            // 
+            this.txtSenha.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSenha.Location = new System.Drawing.Point(152, 232);
+            this.txtSenha.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtSenha.Name = "txtSenha";
+            this.txtSenha.Size = new System.Drawing.Size(150, 29);
+            this.txtSenha.TabIndex = 4;
+            // 
+            // mskCpf
+            // 
+            this.mskCpf.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mskCpf.Location = new System.Drawing.Point(152, 157);
+            this.mskCpf.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.mskCpf.Mask = "000,000,000-00";
+            this.mskCpf.Name = "mskCpf";
+            this.mskCpf.Size = new System.Drawing.Size(150, 29);
+            this.mskCpf.TabIndex = 3;
+            this.mskCpf.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.mskCpf_MaskInputRejected);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Black;
+            this.label4.Location = new System.Drawing.Point(147, 204);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(73, 25);
+            this.label4.TabIndex = 2;
+            this.label4.Text = "Senha";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Black;
+            this.label3.Location = new System.Drawing.Point(147, 128);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(56, 25);
+            this.label3.TabIndex = 1;
+            this.label3.Text = "CPF";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Arial", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.Location = new System.Drawing.Point(207, 39);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(90, 32);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Login";
+            // 
             // Login
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1028, 679);
+            this.ClientSize = new System.Drawing.Size(771, 552);
             this.Controls.Add(this.tableLayoutPanel1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.MinimizeBox = false;
             this.Name = "Login";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
             this.tableLayoutPanel1.ResumeLayout(false);
             this.bordaredonda3.ResumeLayout(false);

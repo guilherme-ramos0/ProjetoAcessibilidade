@@ -177,7 +177,8 @@ namespace Telalogin.view
                 {
                     MessageBox.Show("Cadastro realizado com sucesso!", "Sucesso",
                                   MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    this.Close();
+                    TelaPrincipal principal = new TelaPrincipal(novoUsuario.IdCadastro);
+                    principal.Show();
                 }
                 else
                 {
