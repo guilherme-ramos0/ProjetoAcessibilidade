@@ -41,6 +41,8 @@
             this.cboPosto = new System.Windows.Forms.ComboBox();
             this.btnCancelar = new BotaoBordaArredondada();
             this.btnAgendar = new BotaoBordaArredondada();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.bordaredonda1.SuspendLayout();
@@ -95,6 +97,8 @@
             // bordaredonda1
             // 
             this.bordaredonda1.BackColor = System.Drawing.Color.Transparent;
+            this.bordaredonda1.Controls.Add(this.label3);
+            this.bordaredonda1.Controls.Add(this.label2);
             this.bordaredonda1.Controls.Add(this.dgvAgendamentos);
             this.bordaredonda1.Controls.Add(this.txtObservacoes);
             this.bordaredonda1.Controls.Add(this.txtServico);
@@ -112,8 +116,9 @@
             // 
             // dgvAgendamentos
             // 
+            this.dgvAgendamentos.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dgvAgendamentos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvAgendamentos.Location = new System.Drawing.Point(272, 208);
+            this.dgvAgendamentos.Location = new System.Drawing.Point(263, 247);
             this.dgvAgendamentos.Name = "dgvAgendamentos";
             this.dgvAgendamentos.RowHeadersWidth = 51;
             this.dgvAgendamentos.RowTemplate.Height = 24;
@@ -122,43 +127,50 @@
             // 
             // txtObservacoes
             // 
-            this.txtObservacoes.Location = new System.Drawing.Point(439, 156);
+            this.txtObservacoes.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtObservacoes.Location = new System.Drawing.Point(709, 157);
             this.txtObservacoes.Multiline = true;
             this.txtObservacoes.Name = "txtObservacoes";
-            this.txtObservacoes.Size = new System.Drawing.Size(100, 22);
+            this.txtObservacoes.Size = new System.Drawing.Size(160, 71);
             this.txtObservacoes.TabIndex = 6;
             // 
             // txtServico
             // 
-            this.txtServico.Location = new System.Drawing.Point(272, 156);
+            this.txtServico.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtServico.Location = new System.Drawing.Point(263, 157);
             this.txtServico.Name = "txtServico";
             this.txtServico.Size = new System.Drawing.Size(100, 22);
             this.txtServico.TabIndex = 5;
             // 
             // dtpHora
             // 
-            this.dtpHora.Location = new System.Drawing.Point(678, 84);
+            this.dtpHora.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.dtpHora.Location = new System.Drawing.Point(669, 88);
             this.dtpHora.Name = "dtpHora";
             this.dtpHora.Size = new System.Drawing.Size(200, 22);
             this.dtpHora.TabIndex = 4;
+            this.dtpHora.Value = new System.DateTime(2025, 5, 9, 9, 35, 0, 0);
             // 
             // dtpData
             // 
-            this.dtpData.Location = new System.Drawing.Point(439, 84);
+            this.dtpData.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.dtpData.Location = new System.Drawing.Point(430, 88);
             this.dtpData.Name = "dtpData";
             this.dtpData.Size = new System.Drawing.Size(200, 22);
             this.dtpData.TabIndex = 3;
             // 
             // cboPosto
             // 
+            this.cboPosto.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.cboPosto.FormattingEnabled = true;
-            this.cboPosto.Location = new System.Drawing.Point(272, 82);
+            this.cboPosto.Location = new System.Drawing.Point(263, 86);
             this.cboPosto.Name = "cboPosto";
             this.cboPosto.Size = new System.Drawing.Size(121, 24);
             this.cboPosto.TabIndex = 2;
             // 
             // btnCancelar
             // 
+            this.btnCancelar.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnCancelar.AutoSize = true;
             this.btnCancelar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(94)))), ((int)(((byte)(221)))));
             this.btnCancelar.CornerRadius = 20;
@@ -166,7 +178,7 @@
             this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancelar.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancelar.ForeColor = System.Drawing.Color.White;
-            this.btnCancelar.Location = new System.Drawing.Point(623, 463);
+            this.btnCancelar.Location = new System.Drawing.Point(614, 502);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(293, 37);
             this.btnCancelar.TabIndex = 1;
@@ -176,6 +188,7 @@
             // 
             // btnAgendar
             // 
+            this.btnAgendar.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnAgendar.AutoSize = true;
             this.btnAgendar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(94)))), ((int)(((byte)(221)))));
             this.btnAgendar.CornerRadius = 20;
@@ -183,13 +196,31 @@
             this.btnAgendar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAgendar.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAgendar.ForeColor = System.Drawing.Color.White;
-            this.btnAgendar.Location = new System.Drawing.Point(259, 463);
+            this.btnAgendar.Location = new System.Drawing.Point(250, 502);
             this.btnAgendar.Name = "btnAgendar";
             this.btnAgendar.Size = new System.Drawing.Size(293, 37);
             this.btnAgendar.TabIndex = 0;
             this.btnAgendar.Text = "Confirmar Agendamento";
             this.btnAgendar.UseVisualStyleBackColor = false;
             this.btnAgendar.Click += new System.EventHandler(this.btnAgendar_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(260, 138);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(167, 16);
+            this.label2.TabIndex = 8;
+            this.label2.Text = "insira qual serviço gostaria";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(653, 138);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(283, 16);
+            this.label3.TabIndex = 9;
+            this.label3.Text = "Se houver alguma observaçao insira por favor";
             // 
             // Agendamento
             // 
@@ -224,5 +255,7 @@
         private System.Windows.Forms.ComboBox cboPosto;
         private BotaoBordaArredondada btnCancelar;
         private BotaoBordaArredondada btnAgendar;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
     }
 }

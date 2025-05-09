@@ -118,6 +118,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="controller\CadastroController.cs" />
+    <Compile Include="controller\utils\SessionManager.cs" />
     <Compile Include="controller\utils\CriptografiaUtil.cs" />
     <Compile Include="controller\CryptoHelper.cs" />
     <Compile Include="controller\LoginController.cs" />

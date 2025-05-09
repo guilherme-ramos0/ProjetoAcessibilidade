@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Acessibilidade.Utils;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -21,6 +22,17 @@ namespace Telalogin.view
         {
             TelaMarcarTerapia pag1 = new TelaMarcarTerapia();
             pag1.Show();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            int idUsuarioLogado = SessionManager.UsuarioLogado.IdCadastro;
+
+            // Crie o formulário passando o ID
+            Agendamento formAgendamento = new Agendamento(idUsuarioLogado);
+
+            // Mostre o formulário
+            formAgendamento.ShowDialog();
         }
     }
 }
