@@ -33,6 +33,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.bordaredonda1 = new Bordaredonda();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.dgvAgendamentos = new System.Windows.Forms.DataGridView();
             this.txtObservacoes = new System.Windows.Forms.TextBox();
             this.txtServico = new System.Windows.Forms.TextBox();
@@ -41,8 +43,8 @@
             this.cboPosto = new System.Windows.Forms.ComboBox();
             this.btnCancelar = new BotaoBordaArredondada();
             this.btnAgendar = new BotaoBordaArredondada();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.bordaredonda1.SuspendLayout();
@@ -97,6 +99,8 @@
             // bordaredonda1
             // 
             this.bordaredonda1.BackColor = System.Drawing.Color.Transparent;
+            this.bordaredonda1.Controls.Add(this.label5);
+            this.bordaredonda1.Controls.Add(this.label4);
             this.bordaredonda1.Controls.Add(this.label3);
             this.bordaredonda1.Controls.Add(this.label2);
             this.bordaredonda1.Controls.Add(this.dgvAgendamentos);
@@ -114,6 +118,28 @@
             this.bordaredonda1.Size = new System.Drawing.Size(1168, 590);
             this.bordaredonda1.TabIndex = 1;
             // 
+            // label3
+            // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(609, 138);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(477, 26);
+            this.label3.TabIndex = 9;
+            this.label3.Text = "Se houver alguma observaçao insira por favor";
+            // 
+            // label2
+            // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(260, 138);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(282, 26);
+            this.label2.TabIndex = 8;
+            this.label2.Text = "insira qual serviço gostaria";
+            // 
             // dgvAgendamentos
             // 
             this.dgvAgendamentos.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -128,7 +154,8 @@
             // txtObservacoes
             // 
             this.txtObservacoes.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtObservacoes.Location = new System.Drawing.Point(709, 157);
+            this.txtObservacoes.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtObservacoes.Location = new System.Drawing.Point(720, 167);
             this.txtObservacoes.Multiline = true;
             this.txtObservacoes.Name = "txtObservacoes";
             this.txtObservacoes.Size = new System.Drawing.Size(160, 71);
@@ -137,35 +164,41 @@
             // txtServico
             // 
             this.txtServico.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtServico.Location = new System.Drawing.Point(263, 157);
+            this.txtServico.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtServico.Location = new System.Drawing.Point(263, 167);
             this.txtServico.Name = "txtServico";
-            this.txtServico.Size = new System.Drawing.Size(100, 22);
+            this.txtServico.Size = new System.Drawing.Size(164, 34);
             this.txtServico.TabIndex = 5;
             // 
             // dtpHora
             // 
             this.dtpHora.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.dtpHora.Location = new System.Drawing.Point(669, 88);
+            this.dtpHora.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpHora.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+            this.dtpHora.Location = new System.Drawing.Point(790, 59);
             this.dtpHora.Name = "dtpHora";
-            this.dtpHora.Size = new System.Drawing.Size(200, 22);
+            this.dtpHora.Size = new System.Drawing.Size(152, 38);
             this.dtpHora.TabIndex = 4;
             this.dtpHora.Value = new System.DateTime(2025, 5, 9, 9, 35, 0, 0);
             // 
             // dtpData
             // 
             this.dtpData.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.dtpData.Location = new System.Drawing.Point(430, 88);
+            this.dtpData.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpData.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpData.Location = new System.Drawing.Point(537, 63);
             this.dtpData.Name = "dtpData";
-            this.dtpData.Size = new System.Drawing.Size(200, 22);
+            this.dtpData.Size = new System.Drawing.Size(173, 34);
             this.dtpData.TabIndex = 3;
             // 
             // cboPosto
             // 
             this.cboPosto.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.cboPosto.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboPosto.FormattingEnabled = true;
-            this.cboPosto.Location = new System.Drawing.Point(263, 86);
+            this.cboPosto.Location = new System.Drawing.Point(53, 58);
             this.cboPosto.Name = "cboPosto";
-            this.cboPosto.Size = new System.Drawing.Size(121, 24);
+            this.cboPosto.Size = new System.Drawing.Size(404, 39);
             this.cboPosto.TabIndex = 2;
             // 
             // btnCancelar
@@ -204,23 +237,27 @@
             this.btnAgendar.UseVisualStyleBackColor = false;
             this.btnAgendar.Click += new System.EventHandler(this.btnAgendar_Click);
             // 
-            // label2
+            // label4
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(260, 138);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(167, 16);
-            this.label2.TabIndex = 8;
-            this.label2.Text = "insira qual serviço gostaria";
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(64, 19);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(374, 26);
+            this.label4.TabIndex = 10;
+            this.label4.Text = "escolha qual hospital de preferencia";
             // 
-            // label3
+            // label5
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(653, 138);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(283, 16);
-            this.label3.TabIndex = 9;
-            this.label3.Text = "Se houver alguma observaçao insira por favor";
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(532, 19);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(468, 26);
+            this.label5.TabIndex = 11;
+            this.label5.Text = "insira uma data e horario de comparecimento";
             // 
             // Agendamento
             // 
@@ -257,5 +294,7 @@
         private BotaoBordaArredondada btnAgendar;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
     }
 }

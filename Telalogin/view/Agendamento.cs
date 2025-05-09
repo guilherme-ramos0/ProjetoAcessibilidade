@@ -181,11 +181,11 @@ namespace Telalogin.view
                 using (MySqlConnection conn = DbConnection.GetConnection())
                 {
                     conn.Open();
-                    string query = "UPDATE Agendamentos SET Status = 'Cancelado' WHERE IdAgendamento = @IdAgendamento";
+                    string query = "UPDATE Agendamentos SET Status = 'Cancelado' WHERE IdAgendamentos = @IdAgendamentos";
 
                     using (MySqlCommand cmd = new MySqlCommand(query, conn))
                     {
-                        cmd.Parameters.AddWithValue("@IdAgendamento", idAgendamento);
+                        cmd.Parameters.AddWithValue("@IdAgendamentos", idAgendamento);
                         cmd.ExecuteNonQuery();
                     }
                 }
@@ -211,7 +211,7 @@ namespace Telalogin.view
                 return;
             }
 
-            int idAgendamento = Convert.ToInt32(dgvAgendamentos.SelectedRows[0].Cells["IdAgendamento"].Value);
+            int idAgendamento = Convert.ToInt32(dgvAgendamentos.SelectedRows[0].Cells["IdAgendamentos"].Value);
 
             if (MessageBox.Show("Deseja realmente cancelar este agendamento?", "Confirmar Cancelamento",
                               MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)

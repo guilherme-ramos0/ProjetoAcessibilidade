@@ -51,10 +51,10 @@ namespace Telalogin.view
                                   MessageBoxIcon.Information);
 
                     SessionManager.UsuarioLogado = usuarioAutenticado;
+                    int idCadastro = SessionManager.UsuarioLogado.IdCadastro;
 
-                    
                     // Abre o formulário principal
-                    TelaPrincipal formPrincipal = new TelaPrincipal();
+                    TelaPrincipal formPrincipal = new TelaPrincipal(idCadastro);
                     formPrincipal.Show();
                 }
                 else
