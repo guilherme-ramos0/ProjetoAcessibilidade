@@ -19,7 +19,20 @@ namespace Telalogin
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            Application.Run(new Login());
+            // Cria e mostra o formulário de login
+            using (Login loginForm = new Login())
+            {
+                if (loginForm.ShowDialog() == DialogResult.OK)
+                {
+                    // Se o login foi bem-sucedido, mostra o principal
+                    Application.Run(new TelaPrincipal());
+                }
+                else
+                {
+                    // Se o login foi cancelado, fecha a aplicação
+                    MessageBox.Show("Operação invalida, repita o login", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
         }
     }
 }

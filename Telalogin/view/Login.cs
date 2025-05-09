@@ -51,7 +51,7 @@ namespace Telalogin.view
                                   MessageBoxIcon.Information);
 
                     // Fecha o formulário de login
-                    this.Hide();
+                    this.Close();
 
                     // Abre o formulário principal
                     TelaPrincipal formPrincipal = new TelaPrincipal();
