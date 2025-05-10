@@ -23,8 +23,10 @@ namespace Telalogin.view
             InitializeComponent();
             Logger.RegistrarInfo("Aplicação iniciada", null, nameof(Login));
             _loginController = new LoginController();
+            txtSenha.Text = "Senha";
+            txtSenha.ForeColor = Color.Gray;
         }
-
+        
         
 
         private void btnlogin_Click(object sender, EventArgs e)
@@ -108,6 +110,42 @@ namespace Telalogin.view
 
         }
 
+        private void txtSenha_TextChanged(object sender, EventArgs e)
+        {
+
+        }
         
+
+        private void txtSenha_Enter(object sender, EventArgs e)
+        {
+            if (txtSenha.Text == "Senha")
+            {
+                txtSenha.Text = "";
+                txtSenha.UseSystemPasswordChar = !chkMostrarSenha.Checked;
+                txtSenha.ForeColor = SystemColors.WindowText;
+            }
+        }
+
+        private void chkMostrarSenha_CheckedChanged(object sender, EventArgs e)
+        {
+            
+            // Se for placeholder, não faz nada
+            if (txtSenha.Text == "Senha")
+                return;
+
+            txtSenha.UseSystemPasswordChar = !chkMostrarSenha.Checked;
+            
+        }
+        
+
+        private void txtSenha_Leave(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(txtSenha.Text))
+            {
+                txtSenha.UseSystemPasswordChar = false;
+                txtSenha.Text = "Senha";
+                txtSenha.ForeColor = SystemColors.GrayText;
+            }
+        }
     }
 }

@@ -179,6 +179,7 @@ namespace Telalogin.view
                                   MessageBoxButtons.OK, MessageBoxIcon.Information);
                     TelaPrincipal principal = new TelaPrincipal(novoUsuario.IdCadastro);
                     principal.Show();
+                    this.Show();
                 }
                 else
                 {
@@ -287,6 +288,11 @@ namespace Telalogin.view
         }
 
         private void txtNomeCompleto_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtSenha_TextChanged(object sender, EventArgs e)
         {
 
         }

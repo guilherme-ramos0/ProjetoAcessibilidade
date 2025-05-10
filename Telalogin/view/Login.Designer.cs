@@ -40,6 +40,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.chkMostrarSenha = new System.Windows.Forms.CheckBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.bordaredonda3.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -95,6 +96,7 @@
             // 
             this.bordaredonda4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.bordaredonda4.BackColor = System.Drawing.Color.White;
+            this.bordaredonda4.Controls.Add(this.chkMostrarSenha);
             this.bordaredonda4.Controls.Add(this.btnCadastrar);
             this.bordaredonda4.Controls.Add(this.btnlogin);
             this.bordaredonda4.Controls.Add(this.txtSenha);
@@ -103,10 +105,10 @@
             this.bordaredonda4.Controls.Add(this.label3);
             this.bordaredonda4.Controls.Add(this.label2);
             this.bordaredonda4.CornerRadius = 80;
-            this.bordaredonda4.Location = new System.Drawing.Point(25, 17);
+            this.bordaredonda4.Location = new System.Drawing.Point(28, 39);
             this.bordaredonda4.Margin = new System.Windows.Forms.Padding(2);
             this.bordaredonda4.Name = "bordaredonda4";
-            this.bordaredonda4.Size = new System.Drawing.Size(487, 402);
+            this.bordaredonda4.Size = new System.Drawing.Size(481, 358);
             this.bordaredonda4.TabIndex = 0;
             // 
             // btnCadastrar
@@ -151,6 +153,9 @@
             this.txtSenha.Name = "txtSenha";
             this.txtSenha.Size = new System.Drawing.Size(150, 29);
             this.txtSenha.TabIndex = 4;
+            this.txtSenha.TextChanged += new System.EventHandler(this.txtSenha_TextChanged);
+            this.txtSenha.Enter += new System.EventHandler(this.txtSenha_Enter);
+            this.txtSenha.Leave += new System.EventHandler(this.txtSenha_Leave);
             // 
             // mskCpf
             // 
@@ -199,6 +204,22 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "Login";
             // 
+            // chkMostrarSenha
+            // 
+            this.chkMostrarSenha.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.chkMostrarSenha.BackColor = System.Drawing.Color.Transparent;
+            this.chkMostrarSenha.CheckAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.chkMostrarSenha.ForeColor = System.Drawing.Color.Black;
+            this.chkMostrarSenha.Location = new System.Drawing.Point(306, 232);
+            this.chkMostrarSenha.Margin = new System.Windows.Forms.Padding(2);
+            this.chkMostrarSenha.Name = "chkMostrarSenha";
+            this.chkMostrarSenha.Size = new System.Drawing.Size(54, 46);
+            this.chkMostrarSenha.TabIndex = 14;
+            this.chkMostrarSenha.Text = "Mostrar senha";
+            this.chkMostrarSenha.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.chkMostrarSenha.UseVisualStyleBackColor = false;
+            this.chkMostrarSenha.CheckedChanged += new System.EventHandler(this.chkMostrarSenha_CheckedChanged);
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -233,5 +254,6 @@
         private System.Windows.Forms.TextBox txtSenha;
         private System.Windows.Forms.MaskedTextBox mskCpf;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.CheckBox chkMostrarSenha;
     }
 }
