@@ -25,6 +25,7 @@ namespace Telalogin.view
             CarregarDadosUsuario();
             CarregarAgendamentosRecentes();
             ConfigurarGridAgendamentos();
+            this.FormClosed += (sender, e) => Application.Exit();
         }
         private void VerificarAgendamentos()
         {
@@ -40,7 +41,7 @@ namespace Telalogin.view
             }
         }
 
-
+        
 
         private void CarregarDadosUsuario()
         {

@@ -55,7 +55,7 @@
             this.tableLayoutPanel1.Controls.Add(this.bordaredonda3, 0, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -70,7 +70,7 @@
             this.bordaredonda3.CornerRadius = 80;
             this.bordaredonda3.ForeColor = System.Drawing.Color.White;
             this.bordaredonda3.Location = new System.Drawing.Point(116, 57);
-            this.bordaredonda3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bordaredonda3.Margin = new System.Windows.Forms.Padding(2);
             this.bordaredonda3.Name = "bordaredonda3";
             this.bordaredonda3.Size = new System.Drawing.Size(538, 437);
             this.bordaredonda3.TabIndex = 0;
@@ -83,7 +83,7 @@
             this.tableLayoutPanel2.Controls.Add(this.bordaredonda4, 0, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -104,7 +104,7 @@
             this.bordaredonda4.Controls.Add(this.label2);
             this.bordaredonda4.CornerRadius = 80;
             this.bordaredonda4.Location = new System.Drawing.Point(25, 17);
-            this.bordaredonda4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bordaredonda4.Margin = new System.Windows.Forms.Padding(2);
             this.bordaredonda4.Name = "bordaredonda4";
             this.bordaredonda4.Size = new System.Drawing.Size(487, 402);
             this.bordaredonda4.TabIndex = 0;
@@ -118,7 +118,7 @@
             this.btnCadastrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCadastrar.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCadastrar.Location = new System.Drawing.Point(248, 295);
-            this.btnCadastrar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnCadastrar.Margin = new System.Windows.Forms.Padding(2);
             this.btnCadastrar.Name = "btnCadastrar";
             this.btnCadastrar.Size = new System.Drawing.Size(132, 32);
             this.btnCadastrar.TabIndex = 6;
@@ -135,7 +135,7 @@
             this.btnlogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnlogin.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnlogin.Location = new System.Drawing.Point(86, 295);
-            this.btnlogin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnlogin.Margin = new System.Windows.Forms.Padding(2);
             this.btnlogin.Name = "btnlogin";
             this.btnlogin.Size = new System.Drawing.Size(145, 32);
             this.btnlogin.TabIndex = 5;
@@ -147,7 +147,7 @@
             // 
             this.txtSenha.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSenha.Location = new System.Drawing.Point(152, 232);
-            this.txtSenha.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtSenha.Margin = new System.Windows.Forms.Padding(2);
             this.txtSenha.Name = "txtSenha";
             this.txtSenha.Size = new System.Drawing.Size(150, 29);
             this.txtSenha.TabIndex = 4;
@@ -156,7 +156,7 @@
             // 
             this.mskCpf.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mskCpf.Location = new System.Drawing.Point(152, 157);
-            this.mskCpf.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.mskCpf.Margin = new System.Windows.Forms.Padding(2);
             this.mskCpf.Mask = "000,000,000-00";
             this.mskCpf.Name = "mskCpf";
             this.mskCpf.Size = new System.Drawing.Size(150, 29);
@@ -205,7 +205,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(771, 552);
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
+            this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

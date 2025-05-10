@@ -56,6 +56,7 @@ namespace Telalogin.view
                     // Abre o formulário principal
                     TelaPrincipal formPrincipal = new TelaPrincipal(idCadastro);
                     formPrincipal.Show();
+                    this.Hide();
                 }
                 else
                 {

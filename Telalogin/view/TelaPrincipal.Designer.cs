@@ -121,7 +121,7 @@
             this.tableLayoutPanel4.ColumnCount = 3;
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 44.91525F));
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 55.08475F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 412F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 413F));
             this.tableLayoutPanel4.Controls.Add(this.panel3, 1, 0);
             this.tableLayoutPanel4.Controls.Add(this.panel4, 0, 0);
             this.tableLayoutPanel4.Controls.Add(this.flowdireita, 2, 0);
@@ -140,7 +140,7 @@
             this.panel3.Controls.Add(this.lblStatusAgendamentos);
             this.panel3.Controls.Add(this.dgvAgendamentos);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(366, 3);
+            this.panel3.Location = new System.Drawing.Point(365, 3);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(439, 693);
             this.panel3.TabIndex = 1;
@@ -196,7 +196,7 @@
             this.panel4.Location = new System.Drawing.Point(3, 3);
             this.panel4.Name = "panel4";
             this.panel4.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
-            this.panel4.Size = new System.Drawing.Size(357, 693);
+            this.panel4.Size = new System.Drawing.Size(356, 693);
             this.panel4.TabIndex = 2;
             // 
             // button1
@@ -320,6 +320,7 @@
             this.Controls.Add(this.tableLayoutPanel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "TelaPrincipal";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TelaPrincipal";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.tableLayoutPanel1.ResumeLayout(false);
