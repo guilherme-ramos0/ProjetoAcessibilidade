@@ -79,12 +79,7 @@ namespace Telalogin.view
                 Width = 150
             });
 
-            dgvAgendamentos.Columns.Add(new DataGridViewTextBoxColumn
-            {
-                DataPropertyName = "Status",
-                HeaderText = "Status",
-                Width = 80
-            });
+            
 
         }
         private void CarregarAgendamentosRecentes()
@@ -113,11 +108,9 @@ namespace Telalogin.view
                         {
                             agendamentos.Add(new
                             {
-                                Id = row["idAgendamentos"],
-                                Posto = row["Posto"],
+                                Posto = row["nome"],
                                 DataFormatada = Convert.ToDateTime(row["dataAgendamento"]).ToString("dd/MM/yyyy HH:mm"),
-                                TipoServico = row["tipoServico"],
-                                Status = row["status"]
+                                TipoServico = row["tipoServico"]
                             });
                         }
 

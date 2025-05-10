@@ -121,7 +121,7 @@
             this.tableLayoutPanel4.ColumnCount = 3;
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 44.91525F));
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 55.08475F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 409F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 412F));
             this.tableLayoutPanel4.Controls.Add(this.panel3, 1, 0);
             this.tableLayoutPanel4.Controls.Add(this.panel4, 0, 0);
             this.tableLayoutPanel4.Controls.Add(this.flowdireita, 2, 0);
@@ -140,14 +140,13 @@
             this.panel3.Controls.Add(this.lblStatusAgendamentos);
             this.panel3.Controls.Add(this.dgvAgendamentos);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(367, 3);
+            this.panel3.Location = new System.Drawing.Point(366, 3);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(441, 693);
+            this.panel3.Size = new System.Drawing.Size(439, 693);
             this.panel3.TabIndex = 1;
             // 
             // btnAtualizar
             // 
-            this.btnAtualizar.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnAtualizar.AutoSize = true;
             this.btnAtualizar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(74)))), ((int)(((byte)(173)))));
             this.btnAtualizar.CornerRadius = 20;
@@ -169,7 +168,7 @@
             this.lblStatusAgendamentos.AutoSize = true;
             this.lblStatusAgendamentos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lblStatusAgendamentos.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblStatusAgendamentos.Location = new System.Drawing.Point(168, 94);
+            this.lblStatusAgendamentos.Location = new System.Drawing.Point(64, 94);
             this.lblStatusAgendamentos.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblStatusAgendamentos.Name = "lblStatusAgendamentos";
             this.lblStatusAgendamentos.Size = new System.Drawing.Size(77, 27);
@@ -178,7 +177,6 @@
             // 
             // dgvAgendamentos
             // 
-            this.dgvAgendamentos.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dgvAgendamentos.BackgroundColor = System.Drawing.Color.White;
             this.dgvAgendamentos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvAgendamentos.Location = new System.Drawing.Point(7, 158);
@@ -198,7 +196,7 @@
             this.panel4.Location = new System.Drawing.Point(3, 3);
             this.panel4.Name = "panel4";
             this.panel4.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
-            this.panel4.Size = new System.Drawing.Size(358, 693);
+            this.panel4.Size = new System.Drawing.Size(357, 693);
             this.panel4.TabIndex = 2;
             // 
             // button1
@@ -243,7 +241,7 @@
             // 
             this.flowdireita.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.flowdireita.Controls.Add(this.bordaredonda1);
-            this.flowdireita.Location = new System.Drawing.Point(827, 198);
+            this.flowdireita.Location = new System.Drawing.Point(825, 198);
             this.flowdireita.Name = "flowdireita";
             this.flowdireita.Size = new System.Drawing.Size(378, 302);
             this.flowdireita.TabIndex = 0;
@@ -323,6 +321,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "TelaPrincipal";
             this.Text = "TelaPrincipal";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.tableLayoutPanel1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.informaçõescentrais.ResumeLayout(false);
