@@ -177,9 +177,16 @@ namespace Telalogin.view
                 {
                     MessageBox.Show("Cadastro realizado com sucesso!", "Sucesso",
                                   MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    TelaPrincipal principal = new TelaPrincipal(novoUsuario.IdCadastro);
-                    principal.Show();
-                    this.Show();
+
+                    // Fecha a tela de cadastro
+                    this.Hide();
+
+                    // Abre a tela de login
+                    Login login = new Login();
+                    login.Show();
+
+                    // Fecha completamente a tela de cadastro quando o login for fechado
+                    this.Close();
                 }
                 else
                 {
